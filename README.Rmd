@@ -40,53 +40,60 @@ Exported functions and examples of output data are grouped by similar endpoints
 and included below.
 
 ### U.S.
-+ `covid19_us()`
-+ `covid19_us_daily()`
-
-```{r}
-covid19_us()
-covid19_us_daily()
-```
++ **`covid19_us()`**: Counts (`positive`, `negative`, `pos_neg` (positive + negative), `hospitalized`, `death`, `total`) for entire the U.S.
+   ```{r}
+   covid19_us()
+   ```
++ **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg` (positive + negative), `hospitalized`, `death`, `total`, `states`) by day
+   ```{r}
+   covid19_us_daily()
+   ```
 
 ### States
-+ `covid19_states()`
-+ `covid19_states_daily()`
-+ `covid19_states_info()`
++ **`covid19_states()`**: Counts (`positive`, `negative`, `hospitalized`, `death`, `pending`, `total`) and grades (`positive_score`, `negative_score`, `grade`, `score`) by state
+   ```{r}
+   covid19_states()
+   ```
++ **`covid19_states_daily()`**: Counts (`positive`, `negative`, `pos_neg` (positive + negative), `hospitalized`, `death`, `total`) by day
+   ```{r}
+   covid19_states_daily()
+   ```
++ **`covid19_states_info()`**: State government links, Twitter accounts, notes, etc.
+   ```{r}
+   covid19_states_info()
+   ```
 
-```{r}
-covid19_states()
-covid19_states_daily()
-covid19_states_info()
-```
-
-```{r, echo=FALSE}
+```{r, include=FALSE}
 library(ggplot2)
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(dapr)
 states_daily <- covid19_states_daily()
-p <- states_daily %>%
-  mutate(date = as.Date(as.POSIXct(as.character(date), format = "%Y%m%d"))) %>%
-  filter(positive>0) %>%
+pops <- tfse::read_RDS("~/Dropbox/state-populations.rds")
+sp <- left_join(states_daily, pops, by = "state")
+
+sp %>%
+  filter(positive>0, !is.na(pop)) %>%
   group_by(state) %>%
-  mutate(positive = positive - min(positive) + 1,
+  mutate(#positive = positive - min(positive) + 1,
     since1 = as.integer(difftime(date, min(date), units = "days"))) %>%
   ungroup() ->
   g
-split(g, g$state) %>%
-  vap_dbl(~ coef(glm(positive ~ since1, data = .x, family = poisson))[2]) %>%
-  tibble(state = names(.), slop = .) ->
-  slp
+
+## estimate slopes
+betas <- coef(glm(positive ~ since1 + state + log10(pop), data = g, family = poisson))
+g$slope <- betas[match(g$state, sub("state", "", names(betas)))]
+
 font <- "Roboto Condensed"
-p <- left_join(g, slp, by = "state") %>%
+p <- g %>%
   group_by(state) %>%
   mutate(max = max(positive)) %>%
   ungroup() %>%
   filter(since1>=0) %>%
   arrange(desc(max)) %>%
   filter(state %in% unique(state)[1:42]) %>%
-  arrange(desc(slop)) %>%
+  arrange(desc(slope)) %>%
   mutate(state = factor(state, levels = unique(state))) %>%
-  ggplot(aes(x = since1, y = positive, color = slop)) +
+  ggplot(aes(x = since1, y = positive, color = slope)) +
   geom_abline(intercept = 0, slope = 0.3, linetype = "dashed", size = rel(0.8),
     color = "#bb8888cc") +
   geom_point(size = rel(1.5)) +
@@ -94,7 +101,7 @@ p <- left_join(g, slp, by = "state") %>%
   scale_y_log10(labels = function(x) prettyNum(x, big.mark = ",")) +
   scale_colour_viridis_c(begin = 0.1, end = 0.85) +
   facet_wrap(~ state) +
-  coord_cartesian(xlim = c(0, 19)) +
+  coord_cartesian(xlim = c(0, max(g$since1))) +
   theme_minimal(base_family = font) +
   theme(plot.background = element_rect(fill = "#f3f3f3", color = "transparent"),
     axis.ticks = element_line(size = rel(0.25)),
@@ -118,25 +125,27 @@ p <- left_join(g, slp, by = "state") %>%
     caption = dataviz::theme_mwk_caption_text(),
     title = "COVID-19 Reported Case Trajectory by State") +
   ggsave("man/figures/README-state-trajectories.png",
-    width = 8, height = 8, units = "in", dpi = 312)
+    width = 8, height = 7.5, units = "in", dpi = 312)
 ```
 
 ![](man/figures/README-state-trajectories.png)
 
 ### Counties
-+ `covid19_counties()`
-
-```{r}
-covid19_counties()
-```
++ **`covid19_counties()`**: County-level links for government sites, Twitter accounts, etc.
+   ```{r}
+   covid19_counties()
+   ```
 
 ### Other
-+ `covid19_urls()`
-+ `covid19_press()`
-+ `covid19_screenshots()`
-
-```{r}
-covid19_urls()
-covid19_press()
-covid19_screenshots()
-```
++ **`covid19_urls()`**: Links to official state government sites
+   ```{r}
+   covid19_urls()
+   ```
++ **`covid19_press()`**: Information (`title`, `url`, `publication`, `author`, etc.) about publications
+   ```{r}
+   covid19_press()
+   ```
++ **`covid19_screenshots()`**: Information and paths to screenshots of original data sources
+   ```{r}
+   covid19_screenshots()
+   ```
