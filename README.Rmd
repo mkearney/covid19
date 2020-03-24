@@ -1,0 +1,142 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(covid19)
+```
+
+# covid19
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/covid19)](https://CRAN.R-project.org/package=covid19)
+[![](https://img.shields.io/github/last-commit/mkearney/covid19.svg)](https://github.com/mkearney/covid19/commits/master)
+[![](https://img.shields.io/badge/devel%20version-0.0.1-greenyellow.svg)](https://github.com/mkearney/covid19)
+<!-- badges: end -->
+
+An API wrapper for [covidtracking.com](https://covidtracking.com/api/).
+
+## Installation
+
+You can install the from Github with
+
+``` r
+remotes::install_github("mkearney/covid19")
+```
+
+## Endpoints
+
+Endpoint functions calls all follow the convention of `covid19_{endpoint}`. 
+Exported functions and examples of output data are grouped by similar endpoints 
+and included below.
+
+### U.S.
++ `covid19_us()`
++ `covid19_us_daily()`
+
+```{r}
+covid19_us()
+covid19_us_daily()
+```
+
+### States
++ `covid19_states()`
++ `covid19_states_daily()`
++ `covid19_states_info()`
+
+```{r}
+covid19_states()
+covid19_states_daily()
+covid19_states_info()
+```
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+library(dapr)
+states_daily <- covid19_states_daily()
+p <- states_daily %>%
+  mutate(date = as.Date(as.POSIXct(as.character(date), format = "%Y%m%d"))) %>%
+  filter(positive>0) %>%
+  group_by(state) %>%
+  mutate(positive = positive - min(positive) + 1,
+    since1 = as.integer(difftime(date, min(date), units = "days"))) %>%
+  ungroup() ->
+  g
+split(g, g$state) %>%
+  vap_dbl(~ coef(glm(positive ~ since1, data = .x, family = poisson))[2]) %>%
+  tibble(state = names(.), slop = .) ->
+  slp
+font <- "Roboto Condensed"
+p <- left_join(g, slp, by = "state") %>%
+  group_by(state) %>%
+  mutate(max = max(positive)) %>%
+  ungroup() %>%
+  filter(since1>=0) %>%
+  arrange(desc(max)) %>%
+  filter(state %in% unique(state)[1:42]) %>%
+  arrange(desc(slop)) %>%
+  mutate(state = factor(state, levels = unique(state))) %>%
+  ggplot(aes(x = since1, y = positive, color = slop)) +
+  geom_abline(intercept = 0, slope = 0.3, linetype = "dashed", size = rel(0.8),
+    color = "#bb8888cc") +
+  geom_point(size = rel(1.5)) +
+  geom_line(size = rel(1)) +
+  scale_y_log10(labels = function(x) prettyNum(x, big.mark = ",")) +
+  scale_colour_viridis_c(begin = 0.1, end = 0.85) +
+  facet_wrap(~ state) +
+  coord_cartesian(xlim = c(0, 19)) +
+  theme_minimal(base_family = font) +
+  theme(plot.background = element_rect(fill = "#f3f3f3", color = "transparent"),
+    axis.ticks = element_line(size = rel(0.25)),
+    strip.background = element_rect(fill = "#e0e0e0", color = "#999999"),
+    panel.grid.major = element_line(size = rel(0.12), color = "#333333aa"),
+    panel.grid.minor = element_line(size = rel(0.07), color = "#777777aa"),
+    panel.background = element_rect(fill = "#f3f3f3", color = "transparent"),
+    strip.text = element_text(family = font,size = rel(1.1),
+      margin = margin(0.1, -1, 0.1, -1, "lines")),
+    plot.title = element_text(family = font,size = rel(2.5),
+      margin = margin(0.1, -1, 0.1, -1, "lines"), face = "bold"),
+    axis.title = element_text(family = font,face = "italic",color = "#555555",
+      size = rel(1.1), hjust = 0.95),
+    strip.text.x = element_text(family = font),
+    plot.caption = element_text(family = "Font Awesome 5 Brands",
+      margin = margin(1.5, 0, 0.1, 0, "lines"), color = "#888888"),
+    axis.text = element_text(family = font),
+    legend.position = "none") +
+  labs(x = "Days Since First Case",
+    y = "Reported Cases",
+    caption = dataviz::theme_mwk_caption_text(),
+    title = "COVID-19 Reported Case Trajectory by State") +
+  ggsave("man/figures/README-state-trajectories.png",
+    width = 8, height = 8, units = "in", dpi = 312)
+```
+
+![](man/figures/README-state-trajectories.png)
+
+### Counties
++ `covid19_counties()`
+
+```{r}
+covid19_counties()
+```
+
+### Other
++ `covid19_urls()`
++ `covid19_press()`
++ `covid19_screenshots()`
+
+```{r}
+covid19_urls()
+covid19_press()
+covid19_screenshots()
+```

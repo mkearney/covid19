@@ -1,0 +1,24 @@
+Package: covid19
+Type: Package
+Version: 0.0.1
+Title: API Wrapper for COVID Tracking Project
+Authors@R: c(
+    person("Michael W.", "Kearney", ,
+      email = "kearneymw@missouri.edu", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0730-4694"))
+    )
+Description: A wrapper for the COVID-19 tracking API found at the following URL: <https://covidtracking.com/api/>
+Depends:
+    R (>= 3.1.0)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    httr,
+    jsonlite,
+    tibble,
+    dapr,
+    janitor
+RoxygenNote: 7.0.2
+URL: https://github.com/mkearney/covid19
+BugReports: https://github.com/mkearney/covid19/issues
+License: MIT + file LICENSE
