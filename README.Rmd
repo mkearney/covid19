@@ -72,7 +72,7 @@ pops <- tfse::read_RDS("~/Dropbox/state-populations.rds")
 sp <- left_join(states_daily, pops, by = "state")
 
 sp %>%
-  filter(positive>0, !is.na(pop)) %>%
+  filter(positive>1, !is.na(pop)) %>%
   group_by(state) %>%
   mutate(#positive = positive - min(positive) + 1,
     since1 = as.integer(difftime(date, min(date), units = "days"))) %>%
@@ -80,8 +80,10 @@ sp %>%
   g
 
 ## estimate slopes
-betas <- coef(lme4::glmer(positive ~ since1 + state + (1|state), data = g, family = poisson))
-g$slope <- betas[match(g$state, sub("state", "", names(betas)))]
+states <- unique(g$state)
+betas <- unlist(dapr::lap(states, ~ coef(lm(log10(positive) ~ -1 + since1, data = g[g$state == .x, ]))))
+g$slope <- unname(betas[match(g$state, sub("state", "", states))])
+slope_mean <- mean(unname(betas))
 
 font <- "Roboto Condensed"
 p <- g %>%
@@ -94,7 +96,7 @@ p <- g %>%
   arrange(desc(slope)) %>%
   mutate(state = factor(state, levels = unique(state))) %>%
   ggplot(aes(x = since1, y = positive, color = slope)) +
-  geom_abline(intercept = 0, slope = 0.3, linetype = "dashed", size = rel(0.8),
+  geom_abline(intercept = 0, slope = slope_mean, linetype = "dashed", size = rel(0.8),
     color = "#bb8888cc") +
   geom_point(size = rel(1.5)) +
   geom_line(size = rel(1)) +
@@ -122,6 +124,7 @@ p <- g %>%
     legend.position = "none") +
   labs(x = "Days Since First Case",
     y = "Reported Cases",
+    subtitle = "Individual and average state trajectories of reported cases of COVID-19 according to covidtracking.com",
     caption = dataviz::theme_mwk_caption_text(),
     title = "COVID-19 Reported Case Trajectory by State") +
   ggsave("man/figures/README-state-trajectories.png",
