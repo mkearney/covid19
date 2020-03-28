@@ -80,7 +80,7 @@ sp %>%
   g
 
 ## estimate slopes
-betas <- coef(glm(positive ~ since1 + state + log10(pop), data = g, family = poisson))
+betas <- coef(lme4::glmer(positive ~ since1 + state + (1|state), data = g, family = poisson))
 g$slope <- betas[match(g$state, sub("state", "", names(betas)))]
 
 font <- "Roboto Condensed"

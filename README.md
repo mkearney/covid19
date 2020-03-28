@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 6
     #>   positive negative pos_neg hospitalized death  total
     #>      <int>    <int>   <int>        <int> <int>  <int>
-    #> 1    43630   244828  288458         3378   535 303014
+    #> 1    49126   265160  314286         4083   618 328768
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
@@ -86,15 +86,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK          36              1              1                1
-    #>  2 AL         196              1              1                0
-    #>  3 AR         201              1              1                1
-    #>  4 AZ         265              1              1                1
+    #>  2 AL         215              1              1                0
+    #>  3 AR         206              1              1                1
+    #>  4 AZ         357              1              1                1
     #>  5 CA        1733              1              1                1
     #>  6 CO         720              1              1                1
     #>  7 CT         415              1              1                1
     #>  8 DC         137              1              1                1
-    #>  9 DE          87              1              1                0
-    #> 10 FL        1227              1              1                1
+    #>  9 DE          91              1              1                0
+    #> 10 FL        1412              1              1                1
     #> # … with 46 more rows, and 12 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized <int>, death <int>, total <int>, last_update_et <chr>,
@@ -196,20 +196,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_press()
-    #> # A tibble: 37 x 15
+    #> # A tibble: 38 x 15
     #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
     #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 Comp… http… TRUE             NA               FALSE           
-    #>  2 Coro… http… TRUE             NA               FALSE           
+    #>  1 Coro… http… TRUE             NA               TRUE            
+    #>  2 Comp… http… TRUE             NA               FALSE           
     #>  3 Coro… http… TRUE             NA               FALSE           
-    #>  4 Amer… http… FALSE            NA               FALSE           
+    #>  4 Coro… http… TRUE             NA               FALSE           
     #>  5 Amer… http… FALSE            NA               FALSE           
-    #>  6 6 th… http… FALSE            NA               FALSE           
-    #>  7 Trac… http… TRUE             NA               TRUE            
-    #>  8 Thes… http… FALSE            NA               FALSE           
-    #>  9 Huge… http… TRUE             NA               FALSE           
-    #> 10 U.S.… http… TRUE             NA               FALSE           
-    #> # … with 27 more rows, and 10 more variables: publish_date <dttm>,
+    #>  6 Amer… http… FALSE            NA               FALSE           
+    #>  7 6 th… http… FALSE            NA               FALSE           
+    #>  8 Trac… http… TRUE             NA               TRUE            
+    #>  9 Thes… http… FALSE            NA               FALSE           
+    #> 10 Huge… http… TRUE             NA               FALSE           
+    #> # … with 28 more rows, and 10 more variables: publish_date <dttm>,
     #> #   continually_updated <lgl>, publication <chr>, author <chr>,
     #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
     #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
