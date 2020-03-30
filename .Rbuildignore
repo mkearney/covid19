@@ -4,3 +4,4 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 ^working\.R$
+^daily\.R$
