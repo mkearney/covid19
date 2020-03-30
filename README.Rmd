@@ -94,13 +94,13 @@ p <- g %>%
   ungroup() %>%
   filter(since1>=0) %>%
   arrange(desc(max)) %>%
-  filter(state %in% unique(state)[1:42]) %>%
+  filter(state %in% unique(state)[1:49]) %>%
   arrange(desc(slope)) %>%
   mutate(state = factor(state, levels = unique(state))) %>%
   ggplot(aes(x = since1, y = positive, color = slope)) +
   geom_abline(intercept = 0, slope = slope_mean, linetype = "dashed", size = rel(0.8),
     color = "#bb8888cc") +
-  geom_point(size = rel(1.5)) +
+  geom_point(size = rel(1.1)) +
   geom_line(size = rel(1)) +
   scale_y_log10(labels = function(x) prettyNum(x, big.mark = ",")) +
   scale_colour_viridis_c(begin = 0.1, end = 0.85) +
@@ -130,7 +130,7 @@ p <- g %>%
     caption = dataviz::theme_mwk_caption_text(),
     title = "COVID-19 Reported Case Trajectory by State") +
   ggsave("man/figures/README-state-trajectories.png",
-    width = 8, height = 7.5, units = "in", dpi = 312)
+    width = 8, height = 8, units = "in", dpi = 312)
 ```
 
 ![](man/figures/README-state-trajectories.png)
