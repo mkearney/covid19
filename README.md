@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   139061   692290  831351        19730  2428 831351 1502… 2020-03-30 00:00:02
+    #> 1   139061   692290  831351        19730  2428 831351 1502… 2020-03-30 01:48:05
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
