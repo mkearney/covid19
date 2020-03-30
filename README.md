@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash            last_modified       notes                        total_test_resu…
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr>           <dttm>              <chr>                                   <int>
-    #> 1   139061   692290  831351        19730  2428 831351 1502f0591fa766… 2020-03-30 00:00:02 "Please stop using the \"to…           831351
+    #> 1   139061   692290  831351        19730  2428 831351 1502f0591fa766… 2020-03-29 23:44:29 "Please stop using the \"to…           831351
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
