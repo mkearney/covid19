@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash                       last_modified       notes                                                  total_test_resul…
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr>                      <dttm>              <chr>                                                              <int>
-    #> 1   163565   801300  964865        22617  3012 964865 b3cfe808543b50aa1df16d4ca… 2020-03-31 16:22:25 "Please stop using the \"total\" and \"posNeg\" field…            964865
+    #> 1   163565   801300  964865        22617  3012 964865 b3cfe808543b50aa1df16d4ca… 2020-03-31 16:59:34 "Please stop using the \"total\" and \"posNeg\" field…            964865
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
@@ -206,7 +206,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 2,672 x 4
+    #> # A tibble: 2,662 x 4
     #>    state url                                                             date_checked           size
     #>    <chr> <chr>                                                           <chr>                 <int>
     #>  1 AK    https://covidtracking.com/screenshots/AK/AK-20200315-021315.png 2020-03-15T06:13:15Z 563460
@@ -219,5 +219,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/screenshots/AK/AK-20200318-140115.png 2020-03-18T18:01:15Z 569429
     #>  9 AK    https://covidtracking.com/screenshots/AK/AK-20200318-190043.png 2020-03-18T23:00:43Z 517287
     #> 10 AK    https://covidtracking.com/screenshots/AK/AK-20200319-010025.png 2020-03-19T05:00:25Z 524988
-    #> # … with 2,662 more rows
+    #> # … with 2,652 more rows
     ```
