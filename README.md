@@ -206,7 +206,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 2,662 x 4
+    #> # A tibble: 2,672 x 4
     #>    state url                                                             date_checked           size
     #>    <chr> <chr>                                                           <chr>                 <int>
     #>  1 AK    https://covidtracking.com/screenshots/AK/AK-20200315-021315.png 2020-03-15T06:13:15Z 563460
@@ -219,5 +219,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/screenshots/AK/AK-20200318-140115.png 2020-03-18T18:01:15Z 569429
     #>  9 AK    https://covidtracking.com/screenshots/AK/AK-20200318-190043.png 2020-03-18T23:00:43Z 517287
     #> 10 AK    https://covidtracking.com/screenshots/AK/AK-20200319-010025.png 2020-03-19T05:00:25Z 524988
-    #> # … with 2,652 more rows
+    #> # … with 2,662 more rows
     ```
