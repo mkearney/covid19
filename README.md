@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   184770   864201 1048971        26660  3746 1.05e6 ec98… 2020-04-01 04:45:26
+    #> 1   187077   872132 1059209        26990  3832 1.06e6 f987… 2020-04-01 05:45:25
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -80,16 +80,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 21
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         119              1              1                1
-    #>  2 AL         981              1              1                0
-    #>  3 AR         523              1              1                1
+    #>  1 AK         133              1              1                1
+    #>  2 AL         999              1              1                0
+    #>  3 AR         564              1              1                1
     #>  4 AZ        1289              1              1                0
-    #>  5 CA        7482              1              1                1
-    #>  6 CO        2627              1              1                1
+    #>  5 CA        8520              1              1                1
+    #>  6 CO        2966              1              1                1
     #>  7 CT        3128              1              1                1
-    #>  8 DC         495              1              1                1
-    #>  9 DE         406              1              1                0
-    #> 10 FL        6338              1              1                1
+    #>  8 DC         499              1              1                1
+    #>  9 DE         319              1              1                0
+    #> 10 FL        6741              1              1                1
     #> # … with 46 more rows, and 16 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized <int>, death <int>, total <int>, last_update_et <chr>,
