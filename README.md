@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   187701   876805 1064506        27190  3860 1.06e6 852f… 2020-04-01 21:16:03
+    #> 1   210770   939190 1149960        31142  4700 1.15e6 00e3… 2020-04-01 22:53:48
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -50,20 +50,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 28 x 17
+    #> # A tibble: 29 x 17
     #>    date       states positive negative pos_neg pending hospitalized death  total
     #>    <date>      <int>    <int>    <int>   <int>   <int>        <int> <int>  <int>
-    #>  1 2020-03-31     56   184770   864201 1048971   59529        26660  3746 1.11e6
-    #>  2 2020-03-30     56   160530   784324  944854   65382        22303  2939 1.01e6
-    #>  3 2020-03-29     56   139061   692290  831351   65549        19730  2428 8.97e5
-    #>  4 2020-03-28     56   118234   617470  735704   65712        16729  1965 8.01e5
-    #>  5 2020-03-27     56    99413   527220  626633   60094        13718  1530 6.87e5
-    #>  6 2020-03-26     56    80735   438603  519338   60251        10131  1163 5.80e5
-    #>  7 2020-03-25     56    63928   357604  421532   51235         6136   900 4.73e5
-    #>  8 2020-03-24     56    51954   292758  344712   14433         4468   675 3.59e5
-    #>  9 2020-03-23     56    42152   237321  279473   14571         3325   471 2.94e5
-    #> 10 2020-03-22     56    31879   193463  225342    2842         2554   398 2.28e5
-    #> # … with 18 more rows, and 8 more variables: hash <chr>, date_checked <dttm>,
+    #>  1 2020-04-01     56   210770   939190 1149960   59687        31142  4700 1.21e6
+    #>  2 2020-03-31     56   184770   864201 1048971   59529        26660  3746 1.11e6
+    #>  3 2020-03-30     56   160530   784324  944854   65382        22303  2939 1.01e6
+    #>  4 2020-03-29     56   139061   692290  831351   65549        19730  2428 8.97e5
+    #>  5 2020-03-28     56   118234   617470  735704   65712        16729  1965 8.01e5
+    #>  6 2020-03-27     56    99413   527220  626633   60094        13718  1530 6.87e5
+    #>  7 2020-03-26     56    80735   438603  519338   60251        10131  1163 5.80e5
+    #>  8 2020-03-25     56    63928   357604  421532   51235         6136   900 4.73e5
+    #>  9 2020-03-24     56    51954   292758  344712   14433         4468   675 3.59e5
+    #> 10 2020-03-23     56    42152   237321  279473   14571         3325   471 2.94e5
+    #> # … with 19 more rows, and 8 more variables: hash <chr>, date_checked <dttm>,
     #> #   total_test_results <int>, death_increase <int>,
     #> #   hospitalized_increase <int>, negative_increase <int>,
     #> #   positive_increase <int>, total_test_results_increase <int>
@@ -221,7 +221,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 2,934 x 4
+    #> # A tibble: 3,001 x 4
     #>    state url                                            date_checked        size
     #>    <chr> <chr>                                          <chr>              <int>
     #>  1 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-15T06:13… 563460
@@ -234,5 +234,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T18:01… 569429
     #>  9 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T23:00… 517287
     #> 10 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-19T05:00… 524988
-    #> # … with 2,924 more rows
+    #> # … with 2,991 more rows
     ```
