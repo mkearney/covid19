@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   187077   872132 1059209        26990  3832 1.06e6 f987… 2020-04-01 05:45:25
+    #> 1   187077   872132 1059209        26990  3832 1.06e6 f987… 2020-04-01 06:50:25
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -88,7 +88,7 @@ grouped by similar endpoints and included below.
     #>  6 CO        2966              1              1                1
     #>  7 CT        3128              1              1                1
     #>  8 DC         499              1              1                1
-    #>  9 DE         319              1              1                0
+    #>  9 DE         319              1              1                1
     #> 10 FL        6741              1              1                1
     #> # … with 46 more rows, and 16 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
