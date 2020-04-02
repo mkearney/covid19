@@ -53,21 +53,24 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 29 x 17
-    #>    date       states positive negative pos_neg pending hospitalized death  total
-    #>    <date>      <int>    <int>    <int>   <int>   <int>        <int> <int>  <int>
-    #>  1 2020-04-01     56   210770   939190 1149960   59687        31142  4700 1.21e6
-    #>  2 2020-03-31     56   184770   864201 1048971   59529        26660  3746 1.11e6
-    #>  3 2020-03-30     56   160530   784324  944854   65382        22303  2939 1.01e6
-    #>  4 2020-03-29     56   139061   692290  831351   65549        19730  2428 8.97e5
-    #>  5 2020-03-28     56   118234   617470  735704   65712        16729  1965 8.01e5
-    #>  6 2020-03-27     56    99413   527220  626633   60094        13718  1530 6.87e5
-    #>  7 2020-03-26     56    80735   438603  519338   60251        10131  1163 5.80e5
-    #>  8 2020-03-25     56    63928   357604  421532   51235         6136   900 4.73e5
-    #>  9 2020-03-24     56    51954   292758  344712   14433         4468   675 3.59e5
-    #> 10 2020-03-23     56    42152   237321  279473   14571         3325   471 2.94e5
-    #> # … with 19 more rows, and 8 more variables: hash <chr>, date_checked <dttm>,
-    #> #   total_test_results <int>, death_increase <int>,
+    #> # A tibble: 29 x 24
+    #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
+    #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
+    #>  1 2020-04-01     56   210770   939190   59687            16223            31142
+    #>  2 2020-03-31     56   184770   864201   59529            14236            26660
+    #>  3 2020-03-30     56   160530   784324   65382            12147            22303
+    #>  4 2020-03-29     56   139061   692290   65549             9922            19730
+    #>  5 2020-03-28     56   118234   617470   65712             8725            16729
+    #>  6 2020-03-27     56    99413   527220   60094             7532            13718
+    #>  7 2020-03-26     56    80735   438603   60251             5441            10131
+    #>  8 2020-03-25     56    63928   357604   51235               96             6136
+    #>  9 2020-03-24     56    51954   292758   14433               NA             4468
+    #> 10 2020-03-23     56    42152   237321   14571               NA             3325
+    #> # … with 19 more rows, and 17 more variables: in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
+    #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
+    #> #   total_test_results <int>, pos_neg <int>, death_increase <int>,
     #> #   hospitalized_increase <int>, negative_increase <int>,
     #> #   positive_increase <int>, total_test_results_increase <int>
     ```
@@ -80,7 +83,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 28
+    #> # A tibble: 56 x 29
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         143              1              1                1
@@ -93,14 +96,15 @@ grouped by similar endpoints and included below.
     #>  8 DC         653              1              1                1
     #>  9 DE         368              1              1                1
     #> 10 FL        7559              1              1                1
-    #> # … with 46 more rows, and 23 more variables: commercial_score <int>,
+    #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, last_update_et <chr>, check_time_et <chr>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, fips <chr>,
-    #> #   date_modified <dttm>, date_checked <dttm>, notes <chr>, hash <chr>
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
+    #> #   fips <chr>, date_modified <dttm>, date_checked <dttm>, notes <chr>,
+    #> #   hash <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
@@ -109,7 +113,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 1,485 x 24
+    #> # A tibble: 1,485 x 25
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-01 AK         133     4470      NA               NA                9
@@ -122,11 +126,11 @@ grouped by similar endpoints and included below.
     #>  8 2020-04-01 CT        3557    13043      NA              766              766
     #>  9 2020-04-01 DC         586     3262       2               NA               NA
     #> 10 2020-04-01 DE         368     4015      NA               51               57
-    #> # … with 1,475 more rows, and 17 more variables: in_icu_currently <int>,
+    #> # … with 1,475 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
-    #> #   total_test_results <int>, fips <chr>, death_increase <int>,
+    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, death_increase <int>,
     #> #   hospitalized_increase <int>, negative_increase <int>,
     #> #   positive_increase <int>, total_test_results_increase <int>
     ```
