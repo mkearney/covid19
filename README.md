@@ -40,8 +40,8 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   212695   956302 1168997        31440  4774 1.17e6 b5b2… 2020-04-02 15:14:04
-    #> # … with 2 more variables: notes <chr>, total_test_results <int>
+    #> 1   214039   965550 1179589        31501  4809 1.18e6 42be… 2020-04-02 15:55:12
+    #> # … with 2 more variables: total_test_results <int>, notes <chr>
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
@@ -77,7 +77,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 21
+    #> # A tibble: 56 x 28
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         143              1              1                1
@@ -90,10 +90,13 @@ grouped by similar endpoints and included below.
     #>  8 DC         653              1              1                1
     #>  9 DE         368              1              1                1
     #> 10 FL        7559              1              1                1
-    #> # … with 46 more rows, and 16 more variables: commercial_score <int>,
+    #> # … with 46 more rows, and 23 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
-    #> #   hospitalized <int>, death <int>, total <int>, last_update_et <chr>,
-    #> #   check_time_et <chr>, total_test_results <int>, fips <chr>,
+    #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
+    #> #   in_icu_currently <int>, in_icu_cumulative <int>,
+    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
+    #> #   recovered <int>, last_update_et <chr>, check_time_et <chr>, death <int>,
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, fips <chr>,
     #> #   date_modified <dttm>, date_checked <dttm>, notes <chr>, hash <chr>
     ```
 
@@ -221,18 +224,18 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 3,133 x 4
-    #>    state url                                            date_checked        size
-    #>    <chr> <chr>                                          <chr>              <int>
-    #>  1 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-15T06:13… 563460
-    #>  2 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-15T20:32… 432003
-    #>  3 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-16T14:53… 563460
-    #>  4 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-17T03:06… 563522
-    #>  5 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-17T18:09… 567852
-    #>  6 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-17T22:00… 565619
-    #>  7 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T05:00… 568859
-    #>  8 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T18:01… 569429
-    #>  9 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T23:00… 517287
-    #> 10 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-19T05:00… 524988
+    #> # A tibble: 3,133 x 6
+    #>    state url                         date_checked        secondary date     size
+    #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
+    #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
+    #>  2 AK    https://covidtracking.com/… 2020-03-15 20:32:25 FALSE     20200… 432003
+    #>  3 AK    https://covidtracking.com/… 2020-03-16 14:53:36 FALSE     20200… 563460
+    #>  4 AK    https://covidtracking.com/… 2020-03-17 03:06:10 FALSE     20200… 563522
+    #>  5 AK    https://covidtracking.com/… 2020-03-17 18:09:31 FALSE     20200… 567852
+    #>  6 AK    https://covidtracking.com/… 2020-03-17 22:00:17 FALSE     20200… 565619
+    #>  7 AK    https://covidtracking.com/… 2020-03-18 05:00:17 FALSE     20200… 568859
+    #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
+    #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
+    #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
     #> # … with 3,123 more rows
     ```
