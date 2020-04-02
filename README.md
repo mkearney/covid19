@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   210770   939190 1149960        31142  4700 1.15e6 00e3… 2020-04-02 00:42:44
+    #> 1   210770   939190 1149960        31142  4700 1.15e6 00e3… 2020-04-02 01:31:21
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -175,19 +175,19 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_urls()
-    #> # A tibble: 56 x 5
-    #>    kind  name     url                        state_id filter                    
-    #>    <chr> <chr>    <chr>                      <chr>    <chr>                     
-    #>  1 url   Alaska   "http://dhss.alaska.gov/d… AK        <NA>                     
-    #>  2 url   Alabama  "https://services7.arcgis… AL       "css:.ftrTable,html2text,…
-    #>  3 url   Arkansas "https://www.healthy.arka… AR       "css:#contentBody table:c…
-    #>  4 url   Arizona  "https://phantomjscloud.c… AZ       "ocr,clean-new-lines"     
-    #>  5 url   Califor… "https://www.cdph.ca.gov/… CA       "css:table:contains(\"Sta…
-    #>  6 url   Colorado "https://covid19.colorado… CO       "css:p:contains(\"Case Su…
-    #>  7 url   Connect… "https://portal.ct.gov/Co… CT       "css:.content a[href*=\"C…
-    #>  8 url   Washing… "https://coronavirus.dc.g… DC       "css:ul:contains(\"tested…
-    #>  9 url   Delaware "https://services1.arcgis… DE       "css:.ftrTable,html2text,…
-    #> 10 url   Florida  "https://floridahealthcov… FL       "css:table,html2text,stri…
+    #> # A tibble: 56 x 6
+    #>    kind  name    url                 state_id filter               ssl_no_verify
+    #>    <chr> <chr>   <chr>               <chr>    <chr>                <lgl>        
+    #>  1 url   Alaska  "http://dhss.alask… AK        <NA>                NA           
+    #>  2 url   Alabama "https://services7… AL       "css:.ftrTable,html… NA           
+    #>  3 url   Arkans… "https://www.healt… AR       "css:#contentBody t… NA           
+    #>  4 url   Arizona "https://phantomjs… AZ       "ocr,clean-new-line… NA           
+    #>  5 url   Califo… "https://www.cdph.… CA       "css:table:contains… NA           
+    #>  6 url   Colora… "https://covid19.c… CO       "css:p:contains(\"C… NA           
+    #>  7 url   Connec… "https://portal.ct… CT       "css:.content a[hre… NA           
+    #>  8 url   Washin… "https://coronavir… DC       "css:ul:contains(\"… NA           
+    #>  9 url   Delawa… "https://services1… DE       "css:.ftrTable,html… NA           
+    #> 10 url   Florida "https://floridahe… FL       "css:table,html2tex… NA           
     #> # … with 46 more rows
     ```
 
