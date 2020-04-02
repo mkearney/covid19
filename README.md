@@ -37,14 +37,15 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us()
-    #> # A tibble: 1 x 17
+    #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
     #> 1   214039   965550   61760            16513            31501             3837
-    #> # … with 11 more variables: in_icu_cumulative <int>,
+    #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, notes <chr>
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
+    #> #   notes <chr>
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
