@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   212695   956302 1168997        31440  4774 1.17e6 b5b2… 2020-04-02 08:55:25
+    #> 1   212695   956302 1168997        31440  4774 1.17e6 b5b2… 2020-04-02 10:59:25
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -221,7 +221,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 3,066 x 4
+    #> # A tibble: 3,133 x 4
     #>    state url                                            date_checked        size
     #>    <chr> <chr>                                          <chr>              <int>
     #>  1 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-15T06:13… 563460
@@ -234,5 +234,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T18:01… 569429
     #>  9 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T23:00… 517287
     #> 10 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-19T05:00… 524988
-    #> # … with 3,056 more rows
+    #> # … with 3,123 more rows
     ```
