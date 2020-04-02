@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 10
     #>   positive negative pos_neg hospitalized death  total hash  last_modified      
     #>      <int>    <int>   <int>        <int> <int>  <int> <chr> <dttm>             
-    #> 1   210770   939190 1149960        31142  4700 1.15e6 00e3… 2020-04-02 03:53:25
+    #> 1   212695   956302 1168997        31440  4774 1.17e6 b5b2… 2020-04-02 04:30:49
     #> # … with 2 more variables: notes <chr>, total_test_results <int>
     ```
 
@@ -80,16 +80,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 21
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         133              1              1                1
-    #>  2 AL        1077              1              1                0
-    #>  3 AR         584              1              1                1
+    #>  1 AK         143              1              1                1
+    #>  2 AL        1106              1              1                0
+    #>  3 AR         624              1              1                1
     #>  4 AZ        1413              1              1                0
     #>  5 CA        8155              1              1                1
-    #>  6 CO        2966              1              1                1
+    #>  6 CO        3342              1              1                1
     #>  7 CT        3557              1              1                1
     #>  8 DC         586              1              1                1
     #>  9 DE         368              1              1                1
-    #> 10 FL        6955              1              1                1
+    #> 10 FL        7559              1              1                1
     #> # … with 46 more rows, and 16 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized <int>, death <int>, total <int>, last_update_et <chr>,
@@ -139,7 +139,7 @@ grouped by similar endpoints and included below.
     #>  7 CO    https://www.co… https://co… <NA>             @cdphe  Posi… FALSE "Neg…
     #>  8 CT    https://portal… https://po… <NA>             @ctdph  All … FALSE "Dat…
     #>  9 DC    https://corona… https://co… <NA>             @_DCHe… All … FALSE "Pos…
-    #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE  "Las…
+    #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE   <NA>
     #> # … with 46 more rows, and 2 more variables: fips <chr>, name <chr>
     ```
 
@@ -221,7 +221,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 3,001 x 4
+    #> # A tibble: 3,066 x 4
     #>    state url                                            date_checked        size
     #>    <chr> <chr>                                          <chr>              <int>
     #>  1 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-15T06:13… 563460
@@ -234,5 +234,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T18:01… 569429
     #>  9 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-18T23:00… 517287
     #> 10 AK    https://covidtracking.com/screenshots/AK/AK-2… 2020-03-19T05:00… 524988
-    #> # … with 2,991 more rows
+    #> # … with 3,056 more rows
     ```
