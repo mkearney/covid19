@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   239009  1028649   62119            17157            32649             4264
+    #> 1   241734  1046279   62206            17157            33040             4264
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -87,16 +87,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 29
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         143              1              1                1
-    #>  2 AL        1233              1              1                0
-    #>  3 AR         643              1              1                1
+    #>  1 AK         147              1              1                1
+    #>  2 AL        1270              1              1                0
+    #>  3 AR         683              1              1                1
     #>  4 AZ        1598              1              1                0
     #>  5 CA        9191              1              1                1
-    #>  6 CO        3342              1              1                1
+    #>  6 CO        3728              1              1                1
     #>  7 CT        3824              1              1                1
     #>  8 DC         653              1              1                1
     #>  9 DE         393              1              1                1
-    #> 10 FL        8010              1              1                1
+    #> 10 FL        9008              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
@@ -235,7 +235,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 3,266 x 6
+    #> # A tibble: 3,334 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +248,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 3,256 more rows
+    #> # … with 3,324 more rows
     ```
