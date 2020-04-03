@@ -190,18 +190,18 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_urls()
     #> # A tibble: 56 x 6
-    #>    kind  name    url                 state_id filter               ssl_no_verify
-    #>    <chr> <chr>   <chr>               <chr>    <chr>                <lgl>        
-    #>  1 url   Alaska  "http://dhss.alask… AK        <NA>                NA           
-    #>  2 url   Alabama "https://services7… AL       "css:.ftrTable,html… NA           
-    #>  3 url   Arkans… "https://www.healt… AR       "css:#contentBody t… NA           
-    #>  4 url   Arizona "https://phantomjs… AZ       "ocr,clean-new-line… NA           
-    #>  5 url   Califo… "https://www.cdph.… CA       "css:table:contains… NA           
-    #>  6 url   Colora… "https://covid19.c… CO       "css:p:contains(\"C… NA           
-    #>  7 url   Connec… "https://portal.ct… CT       "css:.content a[hre… NA           
-    #>  8 url   Washin… "https://coronavir… DC       "css:ul:contains(\"… NA           
-    #>  9 url   Delawa… "https://services1… DE       "css:.ftrTable,html… NA           
-    #> 10 url   Florida "https://floridahe… FL       "css:table,html2tex… NA           
+    #>    kind  name    url                 filter               state_id ssl_no_verify
+    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
+    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
+    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
+    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
+    #>  4 url   Arizona "https://phantomjs… "ocr,clean-new-line… AZ       NA           
+    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
+    #>  6 url   Colora… "https://covid19.c… "css:p:contains(\"C… CO       NA           
+    #>  7 url   Connec… "https://portal.ct… "css:.content a[hre… CT       NA           
+    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
+    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
+    #> 10 url   Florida "https://floridahe… "css:table,html2tex… FL       NA           
     #> # … with 46 more rows
     ```
 
