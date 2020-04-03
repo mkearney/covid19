@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   239009  1028649   62119            17176            32630             4264
+    #> 1   239009  1028649   62119            17157            32649             4264
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 30 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-02     56   239009  1028649   62119            17176            32630
+    #>  1 2020-04-02     56   239009  1028649   62119            17157            32649
     #>  2 2020-04-01     56   210770   939190   59687            16223            31142
     #>  3 2020-03-31     56   184683   864201   59529            14236            26660
     #>  4 2020-03-30     56   160530   784324   65382            12147            22303
@@ -66,7 +66,7 @@ grouped by similar endpoints and included below.
     #>  7 2020-03-27     56    99413   527220   60094             7532            13718
     #>  8 2020-03-26     56    80735   438603   60251             5441            10131
     #>  9 2020-03-25     56    63928   357604   51235               96             6136
-    #> 10 2020-03-24     56    51954   292758   14433               NA             4468
+    #> 10 2020-03-24     56    51954   292778   14433               NA             4468
     #> # … with 20 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
