@@ -94,7 +94,7 @@ grouped by similar endpoints and included below.
     #>  5 CA        9191              1              1                1
     #>  6 CO        3728              1              1                1
     #>  7 CT        3824              1              1                1
-    #>  8 DC         653              1              1                1
+    #>  8 DC         757              1              1                1
     #>  9 DE         393              1              1                1
     #> 10 FL        9008              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
