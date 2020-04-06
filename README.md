@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   333747  1444740   17368            23069            41559             5497
+    #> 1   334487  1450919   17329            27069            41757             5497
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -88,8 +88,8 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         185              1              1                1
-    #>  2 AL        1841              1              1                0
-    #>  3 AR         853              1              1                1
+    #>  2 AL        1842              1              1                0
+    #>  3 AR         854              1              1                1
     #>  4 AZ        2269              1              1                0
     #>  5 CA       13438              1              1                1
     #>  6 CO        4950              1              1                1
@@ -141,20 +141,35 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_info()
-    #> # A tibble: 56 x 10
-    #>    state covid19site_old covid19site covid19site_sec… twitter pui   pum   notes
-    #>    <chr> <chr>           <chr>       <chr>            <chr>   <chr> <lgl> <chr>
-    #>  1 AK    http://dhss.al… http://dhs… http://dhss.ala… @Alask… All … FALSE "Tot…
-    #>  2 AL    http://www.ala… https://al… <NA>             @alpub… No d… FALSE "Neg…
-    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "Dat…
-    #>  4 AS    http://www.sam… https://ww… https://www.fac… https:… No D… FALSE "Ame…
-    #>  5 AZ    https://www.az… https://ww… <NA>             @azdhs  All … FALSE "Das…
-    #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "Cal…
-    #>  7 CO    https://www.co… https://co… <NA>             @cdphe  Posi… FALSE "Neg…
-    #>  8 CT    https://portal… https://po… <NA>             @ctdph  All … FALSE "Dat…
-    #>  9 DC    https://corona… https://co… <NA>             @_DCHe… All … FALSE "Pos…
-    #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE   <NA>
-    #> # … with 46 more rows, and 2 more variables: fips <chr>, name <chr>
+    #> $state
+    #> [1] "AL"
+    #> 
+    #> $covid19SiteOld
+    #> [1] "http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html"
+    #> 
+    #> $covid19Site
+    #> [1] "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7"
+    #> 
+    #> $covid19SiteSecondary
+    #> NULL
+    #> 
+    #> $twitter
+    #> [1] "@alpublichealth"
+    #> 
+    #> $pui
+    #> [1] "No data"
+    #> 
+    #> $pum
+    #> [1] FALSE
+    #> 
+    #> $notes
+    #> [1] "Negatives = (Totals - Positives) \nPositives occasionally update before totals do; do not revise negatives down, keep the last calculated negative.\nLast Updated (Local Time) = (current date + time = 00:00)"
+    #> 
+    #> $fips
+    #> [1] "01"
+    #> 
+    #> $name
+    #> [1] "Alabama"
     ```
 
 ![](man/figures/README-state-trajectories.png)
