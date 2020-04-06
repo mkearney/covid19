@@ -91,7 +91,7 @@ grouped by similar endpoints and included below.
     #>  2 AL        1842              1              1                0
     #>  3 AR         854              1              1                1
     #>  4 AZ        2269              1              1                0
-    #>  5 CA       13438              1              1                1
+    #>  5 CA       13438              1              1                0
     #>  6 CO        4950              1              1                1
     #>  7 CT        5675              1              1                1
     #>  8 DC         998              1              1                1
