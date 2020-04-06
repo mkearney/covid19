@@ -210,20 +210,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_press()
-    #> # A tibble: 61 x 15
+    #> # A tibble: 63 x 15
     #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
     #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 The … http… NA               NA               TRUE            
-    #>  2 In h… http… FALSE            FALSE            NA              
-    #>  3 The … http… NA               NA               FALSE           
-    #>  4 The … http… FALSE            FALSE            NA              
-    #>  5 Wher… http… TRUE             FALSE            FALSE           
-    #>  6 Expe… http… TRUE             FALSE            FALSE           
-    #>  7 NM C… http… FALSE            FALSE            NA              
-    #>  8 Coro… http… TRUE             TRUE             TRUE            
-    #>  9 Bay … http… TRUE             FALSE            FALSE           
-    #> 10 STAY… http… FALSE            FALSE            FALSE           
-    #> # … with 51 more rows, and 10 more variables: publish_date <dttm>,
+    #>  1 Why … http… NA               NA               FALSE           
+    #>  2 The … http… NA               NA               TRUE            
+    #>  3 In h… http… FALSE            FALSE            NA              
+    #>  4 The … http… NA               NA               FALSE           
+    #>  5 The … http… FALSE            FALSE            NA              
+    #>  6 Wher… http… TRUE             FALSE            FALSE           
+    #>  7 Expe… http… TRUE             FALSE            FALSE           
+    #>  8 NM C… http… FALSE            FALSE            NA              
+    #>  9 Coro… http… TRUE             TRUE             TRUE            
+    #> 10 Bay … http… TRUE             FALSE            FALSE           
+    #> # … with 53 more rows, and 10 more variables: publish_date <dttm>,
     #> #   continually_updated <lgl>, publication <chr>, author <chr>,
     #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
     #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
