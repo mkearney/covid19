@@ -195,7 +195,7 @@ grouped by similar endpoints and included below.
     #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
     #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
     #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
-    #>  4 url   Arizona "https://phantomjs… "ocr,clean-new-line… AZ       NA           
+    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
     #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
     #>  6 url   Colora… "https://covid19.c… "css:p:contains(\"C… CO       NA           
     #>  7 url   Connec… "https://portal.ct… "css:.content a[hre… CT       NA           
