@@ -41,10 +41,9 @@ grouped by similar endpoints and included below.
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
     #> 1   395784  1684159   16621            39014            46292             9652
-    #> # … with 12 more variables: in_icu_cumulative <int>,
-    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
-    #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
+    #> # … with 12 more variables: in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>, last_modified <dttm>,
+    #> #   death <int>, hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
     #> #   notes <chr>
     ```
 
@@ -68,12 +67,11 @@ grouped by similar endpoints and included below.
     #>  9 2020-03-30     56   160530   784324   65369            13377            18984
     #> 10 2020-03-29     56   139061   692290   65545            11486            16677
     #> # … with 25 more rows, and 17 more variables: in_icu_currently <int>,
-    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
-    #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
-    #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
-    #> #   total_test_results <int>, pos_neg <int>, death_increase <int>,
-    #> #   hospitalized_increase <int>, negative_increase <int>,
-    #> #   positive_increase <int>, total_test_results_increase <int>
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>, on_ventilator_cumulative <int>,
+    #> #   recovered <int>, hash <chr>, date_checked <dttm>, death <int>, hospitalized <int>,
+    #> #   total <int>, total_test_results <int>, pos_neg <int>, death_increase <int>,
+    #> #   hospitalized_increase <int>, negative_increase <int>, positive_increase <int>,
+    #> #   total_test_results_increase <int>
     ```
 
 ### States
@@ -85,27 +83,24 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_states()
     #> # A tibble: 56 x 29
-    #>    state positive positive_score negative_score negative_regula…
-    #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         213              1              1                1
-    #>  2 AL        2229              1              1                0
-    #>  3 AR         946              1              1                1
-    #>  4 AZ        2575              1              1                0
-    #>  5 CA       15865              1              1                0
-    #>  6 CO        5429              1              1                1
-    #>  7 CT        7781              1              1                1
-    #>  8 DC        1440              1              1                1
-    #>  9 DE         928              1              1                1
-    #> 10 FL       14747              1              1                1
-    #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
-    #> #   grade <chr>, score <int>, negative <int>, pending <int>,
-    #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
-    #> #   in_icu_currently <int>, in_icu_cumulative <int>,
-    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
+    #>    state positive positive_score negative_score negative_regula… commercial_score grade score
+    #>    <chr>    <int>          <int>          <int>            <int>            <int> <chr> <int>
+    #>  1 AK         213              1              1                1                1 A         4
+    #>  2 AL        2229              1              1                0                1 B         3
+    #>  3 AR         946              1              1                1                1 A         4
+    #>  4 AZ        2575              1              1                0                1 B         3
+    #>  5 CA       15865              1              1                0                1 B         3
+    #>  6 CO        5429              1              1                1                1 A         4
+    #>  7 CT        7781              1              1                1                1 A         4
+    #>  8 DC        1440              1              1                1                1 A         4
+    #>  9 DE         928              1              1                1                1 A         4
+    #> 10 FL       14747              1              1                1                1 A         4
+    #> # … with 46 more rows, and 21 more variables: negative <int>, pending <int>,
+    #> #   hospitalized_currently <int>, hospitalized_cumulative <int>, in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, last_update_et <chr>, check_time_et <chr>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
-    #> #   fips <chr>, date_modified <dttm>, date_checked <dttm>, notes <chr>,
-    #> #   hash <chr>
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>, fips <chr>,
+    #> #   date_modified <dttm>, date_checked <dttm>, notes <chr>, hash <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
@@ -128,12 +123,11 @@ grouped by similar endpoints and included below.
     #>  9 2020-04-07 DC        1211     6612      NA               NA               NA
     #> 10 2020-04-07 DE         928     7628      NA              147               NA
     #> # … with 1,811 more rows, and 18 more variables: in_icu_currently <int>,
-    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
-    #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
-    #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
-    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, death_increase <int>,
-    #> #   hospitalized_increase <int>, negative_increase <int>,
-    #> #   positive_increase <int>, total_test_results_increase <int>
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>, on_ventilator_cumulative <int>,
+    #> #   recovered <int>, hash <chr>, date_checked <dttm>, death <int>, hospitalized <int>,
+    #> #   total <int>, total_test_results <int>, pos_neg <int>, fips <chr>, death_increase <int>,
+    #> #   hospitalized_increase <int>, negative_increase <int>, positive_increase <int>,
+    #> #   total_test_results_increase <int>
     ```
 
   - **`covid19_states_info()`**: State government links, Twitter
@@ -142,23 +136,22 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_states_info()
     #> # A tibble: 56 x 10
-    #>    state covid19site_old covid19site covid19site_sec… twitter pui   pum   notes
-    #>    <chr> <chr>           <chr>       <chr>            <chr>   <chr> <lgl> <chr>
-    #>  1 AK    http://dhss.al… http://dhs… http://dhss.ala… @Alask… All … FALSE "Tot…
-    #>  2 AL    http://www.ala… https://al… <NA>             @alpub… No d… FALSE "Neg…
-    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "Dat…
-    #>  4 AS    http://www.sam… https://ww… https://www.fac… https:… No D… FALSE "Ame…
-    #>  5 AZ    https://www.az… https://ww… <NA>             @azdhs  All … FALSE "Das…
-    #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "The…
-    #>  7 CO    https://www.co… https://co… <NA>             @cdphe  Posi… FALSE "Neg…
-    #>  8 CT    https://portal… https://po… <NA>             @ctdph  All … FALSE "Dat…
-    #>  9 DC    https://corona… https://co… <NA>             @_DCHe… All … FALSE "Pos…
-    #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE   <NA>
-    #> # … with 46 more rows, and 2 more variables: fips <chr>, name <chr>
+    #>    state covid19site_old  covid19site  covid19site_sec… twitter pui   pum   notes fips  name 
+    #>    <chr> <chr>            <chr>        <chr>            <chr>   <chr> <lgl> <chr> <chr> <chr>
+    #>  1 AK    http://dhss.ala… http://dhss… http://dhss.ala… @Alask… All … FALSE "Tot… 02    Alas…
+    #>  2 AL    http://www.alab… https://alp… <NA>             @alpub… No d… FALSE "Neg… 01    Alab…
+    #>  3 AR    https://www.hea… https://www… https://adem.ma… @adhpio All … TRUE  "Dat… 05    Arka…
+    #>  4 AS    http://www.samo… https://www… https://www.fac… https:… No D… FALSE "Ame… 60    Amer…
+    #>  5 AZ    https://www.azd… https://www… <NA>             @azdhs  All … FALSE "Das… 04    Ariz…
+    #>  6 CA    https://www.cdp… https://www… https://www.cdp… @CAPub… Only… FALSE "The… 06    Cali…
+    #>  7 CO    https://www.col… https://cov… <NA>             @cdphe  Posi… FALSE "Neg… 08    Colo…
+    #>  8 CT    https://portal.… https://por… <NA>             @ctdph  All … FALSE "Dat… 09    Conn…
+    #>  9 DC    https://coronav… https://cor… <NA>             @_DCHe… All … FALSE "Pos… 11    Dist…
+    #> 10 DE    https://dhss.de… https://dhs… <NA>             @Delaw… All … TRUE   <NA> 10    Dela…
+    #> # … with 46 more rows
     ```
 
 ![](man/figures/README-state-trajectories.png)
-![](man/figures/README-state-cases.png)
 
 ### Counties
 
@@ -168,19 +161,19 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_counties()
     #> # A tibble: 11 x 7
-    #>    state county   covid19site               data_site main_site   twitter pui   
-    #>    <chr> <chr>    <chr>                     <lgl>     <chr>       <lgl>   <chr> 
-    #>  1 CA    Los Ang… http://publichealth.laco… NA        <NA>        NA      No da…
-    #>  2 NY    Westche… https://health.westchest… NA        <NA>        NA      No da…
-    #>  3 WA    King     https://www.kingcounty.g… NA        <NA>        NA      No da…
-    #>  4 WA    Snohomi… https://www.snohd.org/48… NA        <NA>        NA      All d…
-    #>  5 WA    Grant    http://granthealth.org/2… NA        <NA>        NA      No da…
-    #>  6 WA    Jeffers… https://www.jeffersoncou… NA        <NA>        NA      All d…
-    #>  7 WA    Pierce   https://www.tpchd.org/he… NA        <NA>        NA      Only …
-    #>  8 WA    Clark    https://www.clark.wa.gov… NA        <NA>        NA      All d…
-    #>  9 WA    Kittitas https://www.co.kittitas.… NA        <NA>        NA      No da…
-    #> 10 CA    Contra … https://www.coronavirus.… NA        https://cc… NA      <NA>  
-    #> 11 CA    Alameda… http://www.acphd.org/201… NA        http://www… NA      <NA>
+    #>    state county    covid19site                         data_site main_site    twitter pui    
+    #>    <chr> <chr>     <chr>                               <lgl>     <chr>        <lgl>   <chr>  
+    #>  1 CA    Los Ange… http://publichealth.lacounty.gov/m… NA        <NA>         NA      No data
+    #>  2 NY    Westches… https://health.westchestergov.com/… NA        <NA>         NA      No data
+    #>  3 WA    King      https://www.kingcounty.gov/depts/h… NA        <NA>         NA      No data
+    #>  4 WA    Snohomish https://www.snohd.org/484/Novel-Co… NA        <NA>         NA      All da…
+    #>  5 WA    Grant     http://granthealth.org/2019-novel-… NA        <NA>         NA      No data
+    #>  6 WA    Jefferson https://www.jeffersoncountypublich… NA        <NA>         NA      All da…
+    #>  7 WA    Pierce    https://www.tpchd.org/healthy-peop… NA        <NA>         NA      Only p…
+    #>  8 WA    Clark     https://www.clark.wa.gov/public-he… NA        <NA>         NA      All da…
+    #>  9 WA    Kittitas  https://www.co.kittitas.wa.us/resp… NA        <NA>         NA      No data
+    #> 10 CA    Contra C… https://www.coronavirus.cchealth.o… NA        https://cch… NA      <NA>   
+    #> 11 CA    Alameda … http://www.acphd.org/2019-ncov.aspx NA        http://www.… NA      <NA>
     ```
 
 ### Other
@@ -190,18 +183,18 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_urls()
     #> # A tibble: 56 x 6
-    #>    kind  name    url                 filter               state_id ssl_no_verify
-    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
-    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
-    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
-    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
-    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
-    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
-    #>  6 url   Colora… "https://covid19.c… "css:p:contains(\"C… CO       NA           
-    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
-    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
-    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
-    #> 10 url   Florida "https://floridahe… "css:table,html2tex… FL       NA           
+    #>    kind  name     url                        filter                    state_id ssl_no_verify
+    #>    <chr> <chr>    <chr>                      <chr>                     <chr>    <lgl>        
+    #>  1 url   Alaska   "https://services1.arcgis… "css:.ftrTable,html2text… AK       NA           
+    #>  2 url   Alabama  "https://services7.arcgis… "css:.ftrTable,html2text… AL       NA           
+    #>  3 url   Arkansas "https://www.healthy.arka… "css:#contentBody table:… AR       NA           
+    #>  4 url   Arizona  "https://tableau.azdhs.go… "ocr,clean-new-lines"     AZ       NA           
+    #>  5 url   Califor… "https://www.cdph.ca.gov/… "css:table:contains(\"St… CA       NA           
+    #>  6 url   Colorado "https://covid19.colorado… "css:p:contains(\"Case S… CO       NA           
+    #>  7 url   Connect… "https://data.ct.gov/api/… "strip"                   CT       NA           
+    #>  8 url   Washing… "https://coronavirus.dc.g… "css:ul:contains(\"teste… DC       NA           
+    #>  9 url   Delaware "https://services1.arcgis… "css:.ftrTable,html2text… DE       NA           
+    #> 10 url   Florida  "https://floridahealthcov… "css:table,html2text,str… FL       NA           
     #> # … with 46 more rows
     ```
 
@@ -211,23 +204,22 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_press()
     #> # A tibble: 63 x 15
-    #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
-    #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 Why … http… NA               NA               FALSE           
-    #>  2 The … http… NA               NA               TRUE            
-    #>  3 In h… http… FALSE            FALSE            NA              
-    #>  4 The … http… NA               NA               FALSE           
-    #>  5 The … http… FALSE            FALSE            NA              
-    #>  6 Wher… http… TRUE             FALSE            FALSE           
-    #>  7 Expe… http… TRUE             FALSE            FALSE           
-    #>  8 NM C… http… FALSE            FALSE            NA              
-    #>  9 Coro… http… TRUE             TRUE             TRUE            
-    #> 10 Bay … http… TRUE             FALSE            FALSE           
-    #> # … with 53 more rows, and 10 more variables: publish_date <dttm>,
-    #> #   continually_updated <lgl>, publication <chr>, author <chr>,
-    #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
-    #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
-    #> #   twitter_copy <lgl>, language <chr>
+    #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra… publish_date       
+    #>    <chr> <chr> <lgl>            <lgl>            <lgl>            <dttm>             
+    #>  1 Why … http… NA               NA               FALSE            NA                 
+    #>  2 The … http… NA               NA               TRUE             NA                 
+    #>  3 In h… http… FALSE            FALSE            NA               NA                 
+    #>  4 The … http… NA               NA               FALSE            NA                 
+    #>  5 The … http… FALSE            FALSE            NA               NA                 
+    #>  6 Wher… http… TRUE             FALSE            FALSE            NA                 
+    #>  7 Expe… http… TRUE             FALSE            FALSE            NA                 
+    #>  8 NM C… http… FALSE            FALSE            NA               NA                 
+    #>  9 Coro… http… TRUE             TRUE             TRUE             NA                 
+    #> 10 Bay … http… TRUE             FALSE            FALSE            NA                 
+    #> # … with 53 more rows, and 9 more variables: continually_updated <lgl>, publication <chr>,
+    #> #   author <chr>, does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
+    #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>, twitter_copy <lgl>,
+    #> #   language <chr>
     ```
 
   - **`covid19_screenshots()`**: Information and paths to screenshots of
@@ -236,17 +228,17 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_screenshots()
     #> # A tibble: 4,611 x 6
-    #>    state url                         date_checked        secondary date     size
-    #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
-    #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
-    #>  2 AK    https://covidtracking.com/… 2020-03-15 20:32:25 FALSE     20200… 432003
-    #>  3 AK    https://covidtracking.com/… 2020-03-16 14:53:36 FALSE     20200… 563460
-    #>  4 AK    https://covidtracking.com/… 2020-03-17 03:06:10 FALSE     20200… 563522
-    #>  5 AK    https://covidtracking.com/… 2020-03-17 18:09:31 FALSE     20200… 567852
-    #>  6 AK    https://covidtracking.com/… 2020-03-17 22:00:17 FALSE     20200… 565619
-    #>  7 AK    https://covidtracking.com/… 2020-03-18 05:00:17 FALSE     20200… 568859
-    #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
-    #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
-    #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
+    #>    state url                                      date_checked        secondary date     size
+    #>    <chr> <chr>                                    <dttm>              <lgl>     <chr>   <int>
+    #>  1 AK    https://covidtracking.com/screenshots/A… 2020-03-15 06:13:15 FALSE     20200… 563460
+    #>  2 AK    https://covidtracking.com/screenshots/A… 2020-03-15 20:32:25 FALSE     20200… 432003
+    #>  3 AK    https://covidtracking.com/screenshots/A… 2020-03-16 14:53:36 FALSE     20200… 563460
+    #>  4 AK    https://covidtracking.com/screenshots/A… 2020-03-17 03:06:10 FALSE     20200… 563522
+    #>  5 AK    https://covidtracking.com/screenshots/A… 2020-03-17 18:09:31 FALSE     20200… 567852
+    #>  6 AK    https://covidtracking.com/screenshots/A… 2020-03-17 22:00:17 FALSE     20200… 565619
+    #>  7 AK    https://covidtracking.com/screenshots/A… 2020-03-18 05:00:17 FALSE     20200… 568859
+    #>  8 AK    https://covidtracking.com/screenshots/A… 2020-03-18 18:01:15 FALSE     20200… 569429
+    #>  9 AK    https://covidtracking.com/screenshots/A… 2020-03-18 23:00:43 FALSE     20200… 517287
+    #> 10 AK    https://covidtracking.com/screenshots/A… 2020-03-19 05:00:25 FALSE     20200… 524988
     #> # … with 4,601 more rows
     ```
