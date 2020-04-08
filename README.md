@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   393698  1670448   16612            39011            46093             9649
+    #> 1   395784  1684159   16621            39014            46292             9652
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -57,16 +57,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 35 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-07     56   392594  1661868   16557            39011            45562
+    #>  1 2020-04-07     56   392594  1661868   16557            39011            45580
     #>  2 2020-04-06     56   361331  1547026   17292            27675            44850
     #>  3 2020-04-05     56   332308  1429724   17307            23061            41062
     #>  4 2020-04-04     56   305755  1318592   15573            22158            38211
-    #>  5 2020-04-03     56   271988  1124874   61980            19926            35847
-    #>  6 2020-04-02     56   239099  1028649   62101            17157            32521
-    #>  7 2020-04-01     56   210816   939190   59669            16223            30993
-    #>  8 2020-03-31     56   184683   864201   59518            14236            26518
-    #>  9 2020-03-30     56   160530   784324   65369            12147            22163
-    #> 10 2020-03-29     56   139061   692290   65545             9922            19275
+    #>  5 2020-04-03     56   271988  1124874   61980            21633            34140
+    #>  6 2020-04-02     56   239099  1028649   62101            18796            30882
+    #>  7 2020-04-01     56   210816   939190   59669            17721            29495
+    #>  8 2020-03-31     56   184683   864201   59518            15591            25163
+    #>  9 2020-03-30     56   160530   784324   65369            13332            20978
+    #> 10 2020-03-29     56   139061   692290   65545            11049            18148
     #> # … with 25 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
@@ -88,13 +88,13 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         213              1              1                1
-    #>  2 AL        2197              1              1                0
+    #>  2 AL        2229              1              1                0
     #>  3 AR         946              1              1                1
     #>  4 AZ        2575              1              1                0
     #>  5 CA       15865              1              1                0
     #>  6 CO        5429              1              1                1
     #>  7 CT        7781              1              1                1
-    #>  8 DC        1211              1              1                1
+    #>  8 DC        1440              1              1                1
     #>  9 DE         928              1              1                1
     #> 10 FL       14747              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
@@ -119,7 +119,7 @@ grouped by similar endpoints and included below.
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-07 AK         213     6700      NA               NA               23
     #>  2 2020-04-07 AL        2119    12797      NA               NA              271
-    #>  3 2020-04-07 AR         946    12692      NA               74              130
+    #>  3 2020-04-07 AR         946    12692      NA               74              148
     #>  4 2020-04-07 AS           0       20      11               NA               NA
     #>  5 2020-04-07 AZ        2575    30800      NA               NA               NA
     #>  6 2020-04-07 CA       15865   115364   14100             2611               NA
