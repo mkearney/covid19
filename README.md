@@ -198,7 +198,7 @@ grouped by similar endpoints and included below.
     #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
     #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
     #>  6 url   Colora… "https://covid19.c… "css:p:contains(\"C… CO       NA           
-    #>  7 url   Connec… "https://portal.ct… "css:.content a[hre… CT       NA           
+    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
     #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
     #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
     #> 10 url   Florida "https://floridahe… "css:table,html2tex… FL       NA           
