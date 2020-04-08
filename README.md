@@ -88,11 +88,11 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         213              1              1                1
-    #>  2 AL        2119              1              1                0
+    #>  2 AL        2197              1              1                0
     #>  3 AR         946              1              1                1
     #>  4 AZ        2575              1              1                0
     #>  5 CA       15865              1              1                0
-    #>  6 CO        5172              1              1                1
+    #>  6 CO        5429              1              1                1
     #>  7 CT        7781              1              1                1
     #>  8 DC        1211              1              1                1
     #>  9 DE         928              1              1                1
