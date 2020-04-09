@@ -57,9 +57,9 @@ grouped by similar endpoints and included below.
     #> # A tibble: 36 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-08     56   423164  1766602   17228            40298            47159
+    #>  1 2020-04-08     56   423164  1772607   17228            40298            47159
     #>  2 2020-04-07     56   392594  1661868   16557            39011            45580
-    #>  3 2020-04-06     56   361331  1547026   17292            30237            44850
+    #>  3 2020-04-06     56   361331  1547026   17292            30258            44819
     #>  4 2020-04-05     56   332308  1429724   17307            27061            41062
     #>  5 2020-04-04     56   305755  1318592   15573            26158            38211
     #>  6 2020-04-03     56   271988  1124874   61980            23434            34140
@@ -88,15 +88,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         226              1              1                1
-    #>  2 AL        2369              1              1                0
+    #>  2 AL        2499              1              1                0
     #>  3 AR        1000              1              1                1
     #>  4 AZ        2726              1              1                0
     #>  5 CA       16957              1              1                0
-    #>  6 CO        5429              1              1                1
-    #>  7 CT        7781              1              1                1
+    #>  6 CO        5655              1              1                1
+    #>  7 CT        8781              1              1                1
     #>  8 DC        1440              1              1                1
-    #>  9 DE         928              1              1                1
-    #> 10 FL       15455              1              1                1
+    #>  9 DE        1116              1              1                1
+    #> 10 FL       15698              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
