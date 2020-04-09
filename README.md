@@ -57,16 +57,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 36 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-08     56   423164  1772607   17228            40300            47159
-    #>  2 2020-04-07     56   392594  1661868   16557            39036            45580
-    #>  3 2020-04-06     56   361331  1547026   17292            30419            44819
-    #>  4 2020-04-05     56   332308  1429724   17307            27082            41031
-    #>  5 2020-04-04     56   305755  1318592   15573            26178            37921
-    #>  6 2020-04-03     56   271988  1124874   61980            23624            33819
-    #>  7 2020-04-02     56   239099  1028649   62101            20939            30627
+    #>  1 2020-04-08     56   423222  1774106   17228            40456            47154
+    #>  2 2020-04-07     56   392643  1663025   16557            39036            45500
+    #>  3 2020-04-06     56   361395  1548139   17292            30419            44819
+    #>  4 2020-04-05     56   332377  1431354   17307            27082            41050
+    #>  5 2020-04-04     56   305855  1318592   15573            26178            37956
+    #>  6 2020-04-03     56   271988  1126150   61980            23624            34023
+    #>  7 2020-04-02     56   239099  1029776   62101            20939            30648
     #>  8 2020-04-01     56   210816   939190   59669            19212            26567
     #>  9 2020-03-31     56   184683   864201   59518            17157            22676
-    #> 10 2020-03-30     56   160530   784324   65369            15084            18806
+    #> 10 2020-03-30     56   160530   784324   65369            15216            18806
     #> # … with 26 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 4,611 x 6
+    #> # A tibble: 4,680 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 4,601 more rows
+    #> # … with 4,670 more rows
     ```
