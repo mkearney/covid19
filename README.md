@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   426222  1796219   16782            41251            46784            10231
+    #> 1   426757  1807168   16933            41264            46803            10215
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -88,7 +88,7 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         226              1              1                1
-    #>  2 AL        2499              1              1                0
+    #>  2 AL        2547              1              1                0
     #>  3 AR        1000              1              1                1
     #>  4 AZ        2726              1              1                0
     #>  5 CA       16957              1              1                0
