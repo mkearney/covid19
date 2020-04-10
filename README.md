@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   462191  1921401   17758            47242            49160            12234
+    #> 1   491156  2028486   17444            48344            50559            12688
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -60,8 +60,8 @@ grouped by similar endpoints and included below.
     #>  1 2020-04-10     56   491156  2028486   17444            48344            50559
     #>  2 2020-04-09     56   458474  1916737   17631            46665            48344
     #>  3 2020-04-08     56   424391  1788294   17228            41095            47154
-    #>  4 2020-04-07     56   394210  1678891   16557            39677            45500
-    #>  5 2020-04-06     56   363800  1561229   17292            32210            43198
+    #>  4 2020-04-07     56   394230  1678891   16557            39677            45500
+    #>  5 2020-04-06     56   363815  1561229   17292            32210            43198
     #>  6 2020-04-05     56   335069  1440733   17307            27909            40223
     #>  7 2020-04-04     56   309097  1344104   15573            26374            37667
     #>  8 2020-04-03     56   275542  1148372   61980            23825            33501
@@ -92,10 +92,10 @@ grouped by similar endpoints and included below.
     #>  3 AR        1171              1              1                1
     #>  4 AZ        3112              1              1                0
     #>  5 CA       19472              1              1                0
-    #>  6 CO        6202              1              1                1
-    #>  7 CT        9784              1              1                1
+    #>  6 CO        6510              1              1                1
+    #>  7 CT       10538              1              1                1
     #>  8 DC        1660              1              1                1
-    #>  9 DE        1209              1              1                1
+    #>  9 DE        1326              1              1                1
     #> 10 FL       17531              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
@@ -123,10 +123,10 @@ grouped by similar endpoints and included below.
     #>  4 2020-04-10 AS           0       20      11               NA               NA
     #>  5 2020-04-10 AZ        3112    34622      NA               NA               NA
     #>  6 2020-04-10 CA       19472   145391   13900             2897               NA
-    #>  7 2020-04-10 CO        6202    24978      NA               NA             1221
-    #>  8 2020-04-10 CT        9784    23718      NA             1464               NA
+    #>  7 2020-04-10 CO        6510    26143      NA               NA             1312
+    #>  8 2020-04-10 CT       10538    25750      NA             1562               NA
     #>  9 2020-04-10 DC        1660     7695      NA               NA               NA
-    #> 10 2020-04-10 DE        1209     8683      NA              201               NA
+    #> 10 2020-04-10 DE        1326    10415      NA              181               NA
     #> # … with 1,990 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 4,953 x 6
+    #> # A tibble: 5,021 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 4,943 more rows
+    #> # … with 5,011 more rows
     ```
