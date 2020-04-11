@@ -87,16 +87,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 29
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         246              1              1                1
-    #>  2 AL        3008              1              1                0
-    #>  3 AR        1202              1              1                1
-    #>  4 AZ        3112              1              1                0
+    #>  1 AK         257              1              1                1
+    #>  2 AL        3191              1              1                0
+    #>  3 AR        1226              1              1                1
+    #>  4 AZ        3393              1              1                0
     #>  5 CA       19472              1              1                0
     #>  6 CO        6510              1              1                1
-    #>  7 CT       10538              1              1                1
-    #>  8 DC        1660              1              1                1
-    #>  9 DE        1326              1              1                1
-    #> 10 FL       17968              1              1                1
+    #>  7 CT       11510              1              1                1
+    #>  8 DC        1778              1              1                1
+    #>  9 DE        1479              1              1                1
+    #> 10 FL       18494              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
