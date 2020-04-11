@@ -65,7 +65,7 @@ grouped by similar endpoints and included below.
     #>  6 2020-04-05     56   335069  1440733   17307            27909            40223
     #>  7 2020-04-04     56   309097  1344104   15573            26374            37667
     #>  8 2020-04-03     56   275542  1148372   61980            23825            33501
-    #>  9 2020-04-02     56   243462  1048251   62101            21135            30198
+    #>  9 2020-04-02     56   243462  1048415   62101            21135            30198
     #> 10 2020-04-01     56   215381   954534   59669            19408            26057
     #> # … with 33 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 5,021 x 6
+    #> # A tibble: 5,090 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 5,011 more rows
+    #> # … with 5,080 more rows
     ```
