@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 44 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-11     56   523278  2142628   16593            51409            51114
+    #>  1 2020-04-11     56   523199  2142823   16593            51409            51114
     #>  2 2020-04-10     56   492678  2036047   17444            48465            50683
     #>  3 2020-04-09     56   458474  1916737   17631            46665            48344
     #>  4 2020-04-08     56   424391  1788294   17228            41095            47154
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 5,265 x 6
+    #> # A tibble: 5,293 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 5,255 more rows
+    #> # … with 5,283 more rows
     ```
