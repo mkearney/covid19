@@ -58,10 +58,10 @@ grouped by similar endpoints and included below.
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-12     56   551826  2254066   16419            51413            61201
-    #>  2 2020-04-11     56   522843  2142823   16593            51409            51114
-    #>  3 2020-04-10     56   493252  2036030   17435            48468            50683
-    #>  4 2020-04-09     56   458635  1916720   17622            46676            48344
-    #>  5 2020-04-08     56   424289  1788277   17219            41111            47154
+    #>  2 2020-04-11     56   522843  2142823   16593            51409            58549
+    #>  3 2020-04-10     56   493252  2036030   17435            48468            56342
+    #>  4 2020-04-09     56   458635  1916720   17622            46676            52051
+    #>  5 2020-04-08     56   424289  1788277   17219            41111            48917
     #>  6 2020-04-07     56   394156  1678874   16548            39677            45500
     #>  7 2020-04-06     56   363719  1561212   17283            32210            43198
     #>  8 2020-04-05     56   334967  1440716   17303            28490            40223
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 5,530 x 6
+    #> # A tibble: 5,565 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 5,520 more rows
+    #> # … with 5,555 more rows
     ```
