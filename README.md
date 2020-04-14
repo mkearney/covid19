@@ -114,7 +114,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 2,168 x 25
+    #> # A tibble: 2,172 x 25
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-13 AK         277     7553      NA               NA               32
@@ -127,7 +127,7 @@ grouped by similar endpoints and included below.
     #>  8 2020-04-13 CT       13381    30928      NA             1760               NA
     #>  9 2020-04-13 DC        1955     8979      NA              295               NA
     #> 10 2020-04-13 DE        1625    10195      NA              201               NA
-    #> # … with 2,158 more rows, and 18 more variables: in_icu_currently <int>,
+    #> # … with 2,162 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
