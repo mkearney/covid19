@@ -88,15 +88,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         277              1              1                1
-    #>  2 AL        3734              1              1                0
+    #>  2 AL        3803              1              1                0
     #>  3 AR        1410              1              1                1
     #>  4 AZ        3702              1              1                0
     #>  5 CA       22348              1              1                0
-    #>  6 CO        7684              1              1                1
+    #>  6 CO        7691              1              1                1
     #>  7 CT       13381              1              1                1
     #>  8 DC        1955              1              1                1
-    #>  9 DE        1625              1              1                1
-    #> 10 FL       20601              1              1                1
+    #>  9 DE        1761              1              1                1
+    #> 10 FL       21019              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
