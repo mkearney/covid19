@@ -54,20 +54,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 48 x 24
+    #> # A tibble: 49 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-15     56   632656  2610099   16901            58361            69603
-    #>  2 2020-04-14     56   602473  2479147   16615            54215            67547
-    #>  3 2020-04-13     56   576774  2358232   17159            50968            62673
-    #>  4 2020-04-12     56   551826  2254066   16419            51413            61201
-    #>  5 2020-04-11     56   522843  2142823   16593            51409            58549
-    #>  6 2020-04-10     56   493252  2036030   17435            48468            56342
-    #>  7 2020-04-09     56   458635  1916720   17622            46676            52051
-    #>  8 2020-04-08     56   424289  1788277   17219            41111            48917
-    #>  9 2020-04-07     56   394156  1678874   16548            39677            45500
-    #> 10 2020-04-06     56   363719  1561212   17283            32210            43198
-    #> # … with 38 more rows, and 17 more variables: in_icu_currently <int>,
+    #>  1 2020-04-16     56   663260  2737804   16927            57494            74705
+    #>  2 2020-04-15     56   632656  2610099   16901            58361            69603
+    #>  3 2020-04-14     56   602473  2479147   16615            54215            67547
+    #>  4 2020-04-13     56   576774  2358232   17159            50968            62673
+    #>  5 2020-04-12     56   551826  2254066   16419            51413            61201
+    #>  6 2020-04-11     56   522843  2142823   16593            51409            58549
+    #>  7 2020-04-10     56   493252  2036030   17435            48468            56342
+    #>  8 2020-04-09     56   458635  1916720   17622            46676            52051
+    #>  9 2020-04-08     56   424289  1788277   17219            41111            48917
+    #> 10 2020-04-07     56   394156  1678874   16548            39677            45500
+    #> # … with 39 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -87,16 +87,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 29
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         293              1              1                1
-    #>  2 AL        4241              1              1                0
-    #>  3 AR        1599              1              1                1
-    #>  4 AZ        3962              1              1                0
-    #>  5 CA       24424              1              1                0
+    #>  1 AK         300              1              1                1
+    #>  2 AL        4345              1              1                0
+    #>  3 AR        1620              1              1                1
+    #>  4 AZ        4234              1              1                0
+    #>  5 CA       26182              1              1                0
     #>  6 CO        8280              1              1                1
-    #>  7 CT       14755              1              1                1
-    #>  8 DC        2197              1              1                1
-    #>  9 DE        2014              1              1                1
-    #> 10 FL       22519              1              1                1
+    #>  7 CT       15884              1              1                1
+    #>  8 DC        2350              1              1                1
+    #>  9 DE        2075              1              1                1
+    #> 10 FL       22897              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
@@ -114,20 +114,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 2,284 x 25
+    #> # A tibble: 2,340 x 25
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-15 AK         293     8371      NA               NA               34
-    #>  2 2020-04-15 AL        4113    29964      NA               NA              525
-    #>  3 2020-04-15 AR        1569    20265      NA               83              130
-    #>  4 2020-04-15 AS           0        3      17               NA               NA
-    #>  5 2020-04-15 AZ        3962    41348      NA              590               NA
-    #>  6 2020-04-15 CA       24424   192062   13200             5163               NA
-    #>  7 2020-04-15 CO        7941    31639      NA               NA             1556
-    #>  8 2020-04-15 CT       14755    35388      NA             1908               NA
-    #>  9 2020-04-15 DC        2197     9328      NA              313               NA
-    #> 10 2020-04-15 DE        2014    11088      NA              208               NA
-    #> # … with 2,274 more rows, and 18 more variables: in_icu_currently <int>,
+    #>  1 2020-04-16 AK         300     8435      NA               NA               35
+    #>  2 2020-04-16 AL        4345    32046      NA               NA              553
+    #>  3 2020-04-16 AR        1620    21055      NA               85               NA
+    #>  4 2020-04-16 AS           0        3      17               NA               NA
+    #>  5 2020-04-16 AZ        4234    43164      NA              578               NA
+    #>  6 2020-04-16 CA       26182   220218   13200             5031               NA
+    #>  7 2020-04-16 CO        8280    32253      NA               NA             1636
+    #>  8 2020-04-16 CT       15884    37238      NA             1926               NA
+    #>  9 2020-04-16 DC        2350     9800      NA              313               NA
+    #> 10 2020-04-16 DE        2075    11275      NA              209               NA
+    #> # … with 2,330 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -151,7 +151,7 @@ grouped by similar endpoints and included below.
     #>  5 AZ    https://www.az… https://ww… <NA>             @azdhs  All … FALSE "Das…
     #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "The…
     #>  7 CO    https://www.co… https://co… <NA>             @cdphe  Posi… FALSE "Neg…
-    #>  8 CT    https://portal… https://po… <NA>             @ctdph  All … FALSE "Dat…
+    #>  8 CT    https://portal… https://da… <NA>             @ctdph  All … FALSE "Dat…
     #>  9 DC    https://corona… https://co… <NA>             @_DCHe… All … FALSE "Pos…
     #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE   <NA>
     #> # … with 46 more rows, and 2 more variables: fips <chr>, name <chr>
