@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   633775  2627836   16877            58342            69980            15137
+    #> 1   633954  2628967   16877            58342            69868            15135
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -89,7 +89,7 @@ grouped by similar endpoints and included below.
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         293              1              1                1
     #>  2 AL        4241              1              1                0
-    #>  3 AR        1569              1              1                1
+    #>  3 AR        1599              1              1                1
     #>  4 AZ        3962              1              1                0
     #>  5 CA       24424              1              1                0
     #>  6 CO        8280              1              1                1
@@ -146,7 +146,7 @@ grouped by similar endpoints and included below.
     #>    <chr> <chr>           <chr>       <chr>            <chr>   <chr> <lgl> <chr>
     #>  1 AK    http://dhss.al… http://dhs… http://dhss.ala… @Alask… All … FALSE "Tot…
     #>  2 AL    http://www.ala… https://al… <NA>             @alpub… No d… FALSE "Neg…
-    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "Dat…
+    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "We …
     #>  4 AS    http://www.sam… https://ww… https://www.fac… <NA>    No D… FALSE "Ame…
     #>  5 AZ    https://www.az… https://ww… <NA>             @azdhs  All … FALSE "Das…
     #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "The…
