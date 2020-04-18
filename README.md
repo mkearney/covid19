@@ -95,7 +95,7 @@ grouped by similar endpoints and included below.
     #>  6 CO        8675              1              1                1
     #>  7 CT       16809              1              1                1
     #>  8 DC        2476              1              1                1
-    #>  9 DE        2075              1              1                1
+    #>  9 DE        2323              1              1                1
     #> 10 FL       24119              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
@@ -122,11 +122,11 @@ grouped by similar endpoints and included below.
     #>  3 2020-04-17 AR        1695    21799      NA               83               NA
     #>  4 2020-04-17 AS           0        3      17               NA               NA
     #>  5 2020-04-17 AZ        4507    44723      NA              566               NA
-    #>  6 2020-04-17 CA       27528   231272    7200             4892               NA
+    #>  6 2020-04-17 CA       27528   224086    7200             4892               NA
     #>  7 2020-04-17 CO        8675    33155      NA               NA             1693
     #>  8 2020-04-17 CT       16809    38653      NA             1946               NA
     #>  9 2020-04-17 DC        2476    10167      NA              313               NA
-    #> 10 2020-04-17 DE        2075    11275      NA              209               NA
+    #> 10 2020-04-17 DE        2323    11694      NA              224               NA
     #> # … with 2,386 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 6,692 x 6
+    #> # A tibble: 6,762 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 6,682 more rows
+    #> # … with 6,752 more rows
     ```
