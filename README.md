@@ -212,10 +212,10 @@ grouped by similar endpoints and included below.
     #> # A tibble: 63 x 15
     #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
     #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 Why … http… NA               NA               FALSE           
-    #>  2 The … http… NA               NA               TRUE            
+    #>  1 Why … http… TRUE             TRUE             FALSE           
+    #>  2 The … http… TRUE             TRUE             TRUE            
     #>  3 In h… http… FALSE            FALSE            NA              
-    #>  4 The … http… NA               NA               FALSE           
+    #>  4 The … http… TRUE             NA               FALSE           
     #>  5 The … http… FALSE            FALSE            NA              
     #>  6 Wher… http… TRUE             FALSE            FALSE           
     #>  7 Expe… http… TRUE             FALSE            FALSE           
