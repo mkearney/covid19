@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   720747  2969735    9906            55667            78839            14782
+    #> 1   722182  2976352    9906            55711            78839            14788
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 51 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-18     56   720747  2969735    9906            55667            78839
+    #>  1 2020-04-18     56   722182  2976352    9906            55711            78839
     #>  2 2020-04-17     56   694520  2862973   10889            56963            77955
     #>  3 2020-04-16     56   663260  2737804   16927            57494            74705
     #>  4 2020-04-15     56   632656  2610099   16901            58361            69603
@@ -91,7 +91,7 @@ grouped by similar endpoints and included below.
     #>  2 AL        4655              1              1                0
     #>  3 AR        1739              1              1                1
     #>  4 AZ        4719              1              1                0
-    #>  5 CA       27528              1              1                0
+    #>  5 CA       28963              1              1                0
     #>  6 CO        9047              1              1                1
     #>  7 CT       16809              1              1                1
     #>  8 DC        2666              1              1                1
@@ -122,7 +122,7 @@ grouped by similar endpoints and included below.
     #>  3 2020-04-18 AR        1739    22402      NA               86              291
     #>  4 2020-04-18 AS           0        3      17               NA               NA
     #>  5 2020-04-18 AZ        4719    46326      NA              566               NA
-    #>  6 2020-04-18 CA       27528   224086    7200             4892               NA
+    #>  6 2020-04-18 CA       28963   230703    7200             4936               NA
     #>  7 2020-04-18 CO        9047    34260      NA               NA             1755
     #>  8 2020-04-18 CT       16809    38653      NA             1946               NA
     #>  9 2020-04-18 DC        2666    10602      NA              313               NA
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 6,873 x 6
+    #> # A tibble: 6,905 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 6,863 more rows
+    #> # … with 6,895 more rows
     ```
