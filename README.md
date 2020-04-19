@@ -88,15 +88,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         314              1              1                1
-    #>  2 AL        4655              1              1                0
-    #>  3 AR        1739              1              1                1
+    #>  2 AL        4723              1              1                0
+    #>  3 AR        1777              1              1                1
     #>  4 AZ        4719              1              1                0
     #>  5 CA       28963              1              1                0
-    #>  6 CO        9047              1              1                1
-    #>  7 CT       16809              1              1                1
+    #>  6 CO        9433              1              1                1
+    #>  7 CT       17550              1              1                1
     #>  8 DC        2666              1              1                1
-    #>  9 DE        2323              1              1                1
-    #> 10 FL       25269              1              1                1
+    #>  9 DE        2538              1              1                1
+    #> 10 FL       25492              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
@@ -146,7 +146,7 @@ grouped by similar endpoints and included below.
     #>    <chr> <chr>           <chr>       <chr>            <chr>   <chr> <lgl> <chr>
     #>  1 AK    http://dhss.al… http://dhs… http://dhss.ala… @Alask… All … FALSE "Tot…
     #>  2 AL    http://www.ala… https://al… <NA>             @alpub… No d… FALSE "Neg…
-    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "We …
+    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE  "[4/…
     #>  4 AS    http://www.sam… https://ww… https://www.fac… <NA>    No D… FALSE "Ame…
     #>  5 AZ    https://www.az… https://ww… <NA>             @azdhs  All … FALSE "Das…
     #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "The…
