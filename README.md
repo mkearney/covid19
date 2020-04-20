@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   772524  3231027    4037            55509            82879            14650
+    #> 1   772524  3231027    4037            55509            82879            14691
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -54,20 +54,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 52 x 24
+    #> # A tibble: 53 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-19     56   749203  3116661   11324            55490            80881
-    #>  2 2020-04-18     56   722182  2976352    9906            56554            78839
-    #>  3 2020-04-17     56   694520  2862973   10889            57821            77955
-    #>  4 2020-04-16     56   663260  2737804   16927            58353            74705
-    #>  5 2020-04-15     56   632656  2610099   16901            59239            69603
-    #>  6 2020-04-14     56   602473  2479147   16615            55103            67547
-    #>  7 2020-04-13     56   576774  2358232   17159            51810            62673
-    #>  8 2020-04-12     56   551826  2254066   16419            52235            61201
-    #>  9 2020-04-11     56   522843  2142823   16593            52250            58549
-    #> 10 2020-04-10     56   493185  2036030   17435            49310            56342
-    #> # … with 42 more rows, and 17 more variables: in_icu_currently <int>,
+    #>  1 2020-04-20     56   772524  3231027    4037            55509            82879
+    #>  2 2020-04-19     56   749203  3116661   11324            55490            80881
+    #>  3 2020-04-18     56   722182  2976352    9906            56554            78839
+    #>  4 2020-04-17     56   694520  2862973   10889            57821            77955
+    #>  5 2020-04-16     56   663260  2737804   16927            58353            74705
+    #>  6 2020-04-15     56   632656  2610099   16901            59239            69603
+    #>  7 2020-04-14     56   602473  2479147   16615            55103            67547
+    #>  8 2020-04-13     56   576774  2358232   17159            51810            62673
+    #>  9 2020-04-12     56   551826  2254066   16419            52235            61201
+    #> 10 2020-04-11     56   522843  2142823   16593            52250            58549
+    #> # … with 43 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -209,20 +209,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_press()
-    #> # A tibble: 67 x 15
+    #> # A tibble: 137 x 15
     #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
     #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 As t… http… TRUE             TRUE             FALSE           
-    #>  2 N.Y.… http… TRUE             TRUE             FALSE           
-    #>  3 Coro… http… TRUE             FALSE            NA              
-    #>  4 Reop… http… TRUE             TRUE             NA              
-    #>  5 Why … http… TRUE             TRUE             FALSE           
-    #>  6 The … http… TRUE             TRUE             TRUE            
-    #>  7 In h… http… FALSE            FALSE            NA              
-    #>  8 The … http… TRUE             TRUE             FALSE           
-    #>  9 The … http… FALSE            FALSE            NA              
-    #> 10 Wher… http… TRUE             FALSE            FALSE           
-    #> # … with 57 more rows, and 10 more variables: publish_date <dttm>,
+    #>  1 Coro… http… TRUE             NA               FALSE           
+    #>  2 Inst… http… TRUE             TRUE             FALSE           
+    #>  3 Coro… http… TRUE             TRUE             FALSE           
+    #>  4 Kans… http… TRUE             NA               FALSE           
+    #>  5 Dunl… http… TRUE             NA               FALSE           
+    #>  6 No p… http… NA               NA               FALSE           
+    #>  7 Abbo… http… NA               NA               FALSE           
+    #>  8 Here… http… TRUE             TRUE             FALSE           
+    #>  9 No p… http… NA               NA               FALSE           
+    #> 10 Coro… http… TRUE             NA               FALSE           
+    #> # … with 127 more rows, and 10 more variables: publish_date <dttm>,
     #> #   continually_updated <lgl>, publication <chr>, author <chr>,
     #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
     #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
