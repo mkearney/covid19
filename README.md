@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   749203  3116661   11324            55490            80881            14548
+    #> 1   751062  3130940    2923            55586            80993            14582
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -88,15 +88,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         319              1              1                1
-    #>  2 AL        4837              1              1                0
+    #>  2 AL        4903              1              1                0
     #>  3 AR        1781              1              1                1
     #>  4 AZ        4929              1              1                0
     #>  5 CA       30333              1              1                0
-    #>  6 CO        9433              1              1                1
-    #>  7 CT       17550              1              1                1
+    #>  6 CO        9730              1              1                1
+    #>  7 CT       17962              1              1                1
     #>  8 DC        2793              1              1                1
     #>  9 DE        2538              1              1                1
-    #> 10 FL       25996              1              1                1
+    #> 10 FL       26314              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, negative <int>, pending <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
