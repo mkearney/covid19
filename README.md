@@ -88,13 +88,13 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         321              1              1                1
-    #>  2 AL        5078              1              1                0
-    #>  3 AR        1923              1              1                1
+    #>  2 AL        5092              1              1                0
+    #>  3 AR        1971              1              1                1
     #>  4 AZ        5064              1              1                0
     #>  5 CA       30978              1              1                0
     #>  6 CO       10106              1              1                1
     #>  7 CT       19815              1              1                1
-    #>  8 DC        2927              1              1                1
+    #>  8 DC        3098              1              1                1
     #>  9 DE        2745              1              1                1
     #> 10 FL       27058              1              1                1
     #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
