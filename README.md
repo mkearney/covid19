@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   829168  3653266    4249            58087            85759            15327
+    #> 1   831171  3661935    4246            58064            86042            15294
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -65,7 +65,7 @@ grouped by similar endpoints and included below.
     #>  6 2020-04-17     56   694520  2862973   10889            57858            77955
     #>  7 2020-04-16     56   663260  2737804   16927            58628            74705
     #>  8 2020-04-15     56   632656  2610099   16901            59420            69603
-    #>  9 2020-04-14     56   602473  2479147   16615            58718            67547
+    #>  9 2020-04-14     56   602473  2478913   16615            58718            67547
     #> 10 2020-04-13     56   576774  2358232   17159            55264            62673
     #> # … with 45 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
@@ -188,10 +188,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_urls()
-    #> # A tibble: 1 x 1
-    #>   x500                 
-    #>   <chr>                
-    #> 1 Internal Server Error
+    #> # A tibble: 56 x 6
+    #>    kind  name    url                 filter               state_id ssl_no_verify
+    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
+    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
+    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
+    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
+    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
+    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
+    #>  6 url   Colora… "https://covid19.c… "css:p:contains(\"C… CO       NA           
+    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
+    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
+    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
+    #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
+    #> # … with 46 more rows
     ```
 
   - **`covid19_press()`**: Information (`title`, `url`, `publication`,
