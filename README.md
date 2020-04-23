@@ -114,7 +114,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 2,676 x 25
+    #> # A tibble: 2,713 x 25
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-22 AK         335    11824      NA               39               36
@@ -127,7 +127,7 @@ grouped by similar endpoints and included below.
     #>  8 2020-04-22 CT       22469    47449      NA             1972               NA
     #>  9 2020-04-22 DC        3206    12296      NA              402               NA
     #> 10 2020-04-22 DE        3200    13353      NA              269               NA
-    #> # … with 2,666 more rows, and 18 more variables: in_icu_currently <int>,
+    #> # … with 2,703 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -234,7 +234,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 8,009 x 6
+    #> # A tibble: 8,081 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -247,5 +247,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 7,999 more rows
+    #> # … with 8,071 more rows
     ```
