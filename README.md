@@ -84,7 +84,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 29
+    #> # A tibble: 56 x 30
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         337              1              1                1
@@ -97,15 +97,15 @@ grouped by similar endpoints and included below.
     #>  8 DC        3361              1              1                1
     #>  9 DE        3308              1              1                1
     #> 10 FL       29648              1              1                1
-    #> # … with 46 more rows, and 24 more variables: commercial_score <int>,
-    #> #   grade <chr>, score <int>, negative <int>, pending <int>,
-    #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
-    #> #   in_icu_currently <int>, in_icu_cumulative <int>,
-    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
-    #> #   recovered <int>, last_update_et <chr>, check_time_et <chr>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
-    #> #   fips <chr>, date_modified <dttm>, date_checked <dttm>, notes <chr>,
-    #> #   hash <chr>
+    #> # … with 46 more rows, and 25 more variables: commercial_score <int>,
+    #> #   grade <chr>, score <int>, notes <chr>, data_quality_grade <chr>,
+    #> #   negative <int>, pending <int>, hospitalized_currently <int>,
+    #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, last_update_et <chr>,
+    #> #   check_time_et <chr>, death <int>, hospitalized <int>, total <int>,
+    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, date_modified <dttm>,
+    #> #   date_checked <dttm>, hash <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
