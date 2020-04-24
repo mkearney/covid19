@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   861756  3822544    4432            57902            91461            15178
+    #> 1   861896  3830901    4438            57902            92402            15178
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -58,8 +58,8 @@ grouped by similar endpoints and included below.
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-04-23     56   859318  3800932    4258            57879            91108
-    #>  2 2020-04-22     56   827148  3639623    4191            58173            85465
-    #>  3 2020-04-21     56   800126  3355461    3956            58468            84292
+    #>  2 2020-04-22     56   827963  3639623    4191            58173            85465
+    #>  3 2020-04-21     56   800305  3355461    3956            58468            84292
     #>  4 2020-04-20     56   773020  3231027    4037            55509            82879
     #>  5 2020-04-19     56   749486  3116661   11324            55565            80881
     #>  6 2020-04-18     56   722566  2976352    9906            56575            78839
@@ -89,7 +89,7 @@ grouped by similar endpoints and included below.
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         337              1              1                1
     #>  2 AL        5832              1              1                0
-    #>  3 AR        2465              1              1                1
+    #>  3 AR        2599              1              1                1
     #>  4 AZ        5769              1              1                0
     #>  5 CA       37369              1              1                0
     #>  6 CO       11262              1              1                1
