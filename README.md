@@ -188,10 +188,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_urls()
-    #> # A tibble: 1 x 1
-    #>   x500                 
-    #>   <chr>                
-    #> 1 Internal Server Error
+    #> # A tibble: 56 x 6
+    #>    kind  name    url                 filter               state_id ssl_no_verify
+    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
+    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
+    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
+    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
+    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
+    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
+    #>  6 url   Colora… "https://covid19.c… "css:article .parag… CO       NA           
+    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
+    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
+    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
+    #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
+    #> # … with 46 more rows
     ```
 
   - **`covid19_press()`**: Information (`title`, `url`, `publication`,
