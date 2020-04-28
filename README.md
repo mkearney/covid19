@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1   985064  4643310    4100            54451            98312             9690
+    #> 1  1005592  4790136    4206            54940           106265             9491
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -54,20 +54,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 97 x 24
+    #> # A tibble: 98 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-27     56   981134  4612361    4077            54971            97782
-    #>  2 2020-04-26     56   959258  4443794    4445            55030            95810
-    #>  3 2020-04-25     56   932242  4264407    5315            56344            94743
-    #>  4 2020-04-24     56   896306  4029087    4396            56075            93366
-    #>  5 2020-04-23     56   861788  3831380    4258            57840            91108
-    #>  6 2020-04-22     56   830223  3670933    4191            58086            89799
-    #>  7 2020-04-21     56   802330  3384644    3956            58573            88301
-    #>  8 2020-04-20     56   776419  3262476    4037            55652            86751
-    #>  9 2020-04-19     56   751287  3140096   11324            55550            84670
-    #> 10 2020-04-18     56   723776  3001149    9906            56553            82567
-    #> # … with 87 more rows, and 17 more variables: in_icu_currently <int>,
+    #>  1 2020-04-28     56  1005592  4790136    4206            54940           106265
+    #>  2 2020-04-27     56   981134  4612361    4077            54971            97782
+    #>  3 2020-04-26     56   959258  4443794    4445            55030            95810
+    #>  4 2020-04-25     56   932242  4264407    5315            56344            94743
+    #>  5 2020-04-24     56   896306  4029087    4396            56075            93366
+    #>  6 2020-04-23     56   861788  3831380    4258            57840            91108
+    #>  7 2020-04-22     56   830223  3670933    4191            58086            89799
+    #>  8 2020-04-21     56   802330  3384644    3956            58573            88301
+    #>  9 2020-04-20     56   776419  3262476    4037            55652            86751
+    #> 10 2020-04-19     56   751287  3140096   11324            55550            84670
+    #> # … with 88 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -114,20 +114,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 2,985 x 25
+    #> # A tibble: 3,041 x 25
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-04-27 AK         345    15911      NA               10               NA
-    #>  2 2020-04-27 AL        6499    67498      NA               NA              872
-    #>  3 2020-04-27 AR        3017    37440      NA              109               NA
-    #>  4 2020-04-27 AS           0        3      17               NA               NA
-    #>  5 2020-04-27 AZ        6716    59827      NA              647             1051
-    #>  6 2020-04-27 CA       43464   509945      NA             4878               NA
-    #>  7 2020-04-27 CO       13441    49833      NA             1007             2438
-    #>  8 2020-04-27 CT       25269    54542      NA             1758               NA
-    #>  9 2020-04-27 DC        3892    14524      NA              402               NA
-    #> 10 2020-04-27 DE        4162    15454      NA              325               NA
-    #> # … with 2,975 more rows, and 18 more variables: in_icu_currently <int>,
+    #>  1 2020-04-28 AK         351    16738      NA               16               NA
+    #>  2 2020-04-28 AL        6687    69140      NA               NA              911
+    #>  3 2020-04-28 AR        3111    37560      NA              104               NA
+    #>  4 2020-04-28 AS           0        3      17               NA               NA
+    #>  5 2020-04-28 AZ        6948    60490      NA              737             1095
+    #>  6 2020-04-28 CA       45031   532577      NA             4983               NA
+    #>  7 2020-04-28 CO       13879    52462      NA              994             2485
+    #>  8 2020-04-28 CT       26312    66433      NA             1732               NA
+    #>  9 2020-04-28 DC        3994    14891      NA               NA               NA
+    #> 10 2020-04-28 DE        4575    16605      NA              337               NA
+    #> # … with 3,031 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
@@ -188,20 +188,10 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_urls()
-    #> # A tibble: 56 x 6
-    #>    kind  name    url                 filter               state_id ssl_no_verify
-    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
-    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
-    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
-    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
-    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
-    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
-    #>  6 url   Colora… "https://covid19.c… "css:article .parag… CO       NA           
-    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
-    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
-    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
-    #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
-    #> # … with 46 more rows
+    #> # A tibble: 1 x 1
+    #>   x500                 
+    #>   <chr>                
+    #> 1 Internal Server Error
     ```
 
   - **`covid19_press()`**: Information (`title`, `url`, `publication`,
