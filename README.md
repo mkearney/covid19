@@ -37,7 +37,15 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us()
-    #> # A tibble: 0 x 0
+    #> # A tibble: 1 x 18
+    #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
+    #>      <int>    <int>   <int>            <int>            <int>            <int>
+    #> 1  1033157  4993013    4832            54930           109690             9612
+    #> # … with 12 more variables: in_icu_cumulative <int>,
+    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
+    #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
+    #> #   notes <chr>
     ```
 
   - **`covid19_us_daily()`**: Counts (`positive`, `negative`, `pos_neg`
@@ -76,7 +84,28 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 0 x 0
+    #> # A tibble: 56 x 30
+    #>    state positive positive_score negative_score negative_regula…
+    #>    <chr>    <int>          <int>          <int>            <int>
+    #>  1 AK         355              1              1                1
+    #>  2 AL        6842              1              1                0
+    #>  3 AR        3192              1              1                1
+    #>  4 AZ        7202              1              1                0
+    #>  5 CA       46500              1              1                0
+    #>  6 CO       14735              1              1                1
+    #>  7 CT       26767              1              1                1
+    #>  8 DC        4106              1              1                1
+    #>  9 DE        4655              1              1                1
+    #> 10 FL       33193              1              1                1
+    #> # … with 46 more rows, and 25 more variables: commercial_score <int>,
+    #> #   grade <chr>, score <int>, notes <chr>, data_quality_grade <chr>,
+    #> #   negative <int>, pending <int>, hospitalized_currently <int>,
+    #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, last_update_et <chr>,
+    #> #   check_time_et <chr>, death <int>, hospitalized <int>, total <int>,
+    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, date_modified <dttm>,
+    #> #   date_checked <dttm>, hash <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
@@ -205,5 +234,18 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 0 x 0
+    #> # A tibble: 9,834 x 6
+    #>    state url                         date_checked        secondary date     size
+    #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
+    #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
+    #>  2 AK    https://covidtracking.com/… 2020-03-15 20:32:25 FALSE     20200… 432003
+    #>  3 AK    https://covidtracking.com/… 2020-03-16 14:53:36 FALSE     20200… 563460
+    #>  4 AK    https://covidtracking.com/… 2020-03-17 03:06:10 FALSE     20200… 563522
+    #>  5 AK    https://covidtracking.com/… 2020-03-17 18:09:31 FALSE     20200… 567852
+    #>  6 AK    https://covidtracking.com/… 2020-03-17 22:00:17 FALSE     20200… 565619
+    #>  7 AK    https://covidtracking.com/… 2020-03-18 05:00:17 FALSE     20200… 568859
+    #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
+    #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
+    #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
+    #> # … with 9,824 more rows
     ```
