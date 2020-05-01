@@ -84,95 +84,28 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> $state
-    #> [1] "TX"
-    #> 
-    #> $positive
-    #> [1] 27054
-    #> 
-    #> $positiveScore
-    #> [1] 1
-    #> 
-    #> $negativeScore
-    #> [1] 1
-    #> 
-    #> $negativeRegularScore
-    #> [1] 1
-    #> 
-    #> $commercialScore
-    #> [1] 1
-    #> 
-    #> $grade
-    #> [1] "A"
-    #> 
-    #> $score
-    #> [1] 4
-    #> 
-    #> $notes
-    #> [1] "Please stop using the \"total\" field. Use \"totalTestResults\" instead. As of 4/24/20, \"grade\" is deprecated. Please use \"dataQualityGrade\" instead."
-    #> 
-    #> $dataQualityGrade
-    #> [1] "B"
-    #> 
-    #> $negative
-    #> [1] 287736
-    #> 
-    #> $pending
-    #> NULL
-    #> 
-    #> $hospitalizedCurrently
-    #> [1] 1686
-    #> 
-    #> $hospitalizedCumulative
-    #> NULL
-    #> 
-    #> $inIcuCurrently
-    #> NULL
-    #> 
-    #> $inIcuCumulative
-    #> NULL
-    #> 
-    #> $onVentilatorCurrently
-    #> NULL
-    #> 
-    #> $onVentilatorCumulative
-    #> NULL
-    #> 
-    #> $recovered
-    #> [1] 12507
-    #> 
-    #> $lastUpdateEt
-    #> [1] "4/29 13:00"
-    #> 
-    #> $checkTimeEt
-    #> [1] "4/30 15:02"
-    #> 
-    #> $death
-    #> [1] 732
-    #> 
-    #> $hospitalized
-    #> NULL
-    #> 
-    #> $total
-    #> [1] 314790
-    #> 
-    #> $totalTestResults
-    #> [1] 314790
-    #> 
-    #> $posNeg
-    #> [1] 314790
-    #> 
-    #> $fips
-    #> [1] "48"
-    #> 
-    #> $dateModified
-    #> [1] "2020-04-29T17:00:00Z"
-    #> 
-    #> $dateChecked
-    #> [1] "2020-04-30T19:02:00Z"
-    #> 
-    #> $hash
-    #> [1] "8245b0e9a3549131b074502d8c7f0455d3f15328"
+    #> # A tibble: 56 x 30
+    #>    state positive positive_score negative_score negative_regula…
+    #>    <chr>    <int>          <int>          <int>            <int>
+    #>  1 AK         355              1              1                1
+    #>  2 AL        7019              1              1                0
+    #>  3 AR        3255              1              1                1
+    #>  4 AZ        7648              1              1                0
+    #>  5 CA       48917              1              1                0
+    #>  6 CO       14758              1              1                1
+    #>  7 CT       27700              1              1                1
+    #>  8 DC        4323              1              1                1
+    #>  9 DE        4734              1              1                1
+    #> 10 FL       33690              1              1                1
+    #> # … with 46 more rows, and 25 more variables: commercial_score <int>,
+    #> #   grade <chr>, score <int>, notes <chr>, data_quality_grade <chr>,
+    #> #   negative <int>, pending <int>, hospitalized_currently <int>,
+    #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, last_update_et <chr>,
+    #> #   check_time_et <chr>, death <int>, hospitalized <int>, total <int>,
+    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, date_modified <dttm>,
+    #> #   date_checked <dttm>, hash <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
