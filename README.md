@@ -85,10 +85,10 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_states()
     #> $state
-    #> [1] "LA"
+    #> [1] "TX"
     #> 
     #> $positive
-    #> [1] 28001
+    #> [1] 27054
     #> 
     #> $positiveScore
     #> [1] 1
@@ -115,13 +115,13 @@ grouped by similar endpoints and included below.
     #> [1] "B"
     #> 
     #> $negative
-    #> [1] 133308
+    #> [1] 287736
     #> 
     #> $pending
     #> NULL
     #> 
     #> $hospitalizedCurrently
-    #> [1] 1601
+    #> [1] 1686
     #> 
     #> $hospitalizedCumulative
     #> NULL
@@ -133,46 +133,46 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $onVentilatorCurrently
-    #> [1] 231
+    #> NULL
     #> 
     #> $onVentilatorCumulative
     #> NULL
     #> 
     #> $recovered
-    #> [1] 17303
+    #> [1] 12507
     #> 
     #> $lastUpdateEt
-    #> [1] "4/30 13:00"
+    #> [1] "4/29 13:00"
     #> 
     #> $checkTimeEt
-    #> [1] "4/30 14:43"
+    #> [1] "4/30 15:02"
     #> 
     #> $death
-    #> [1] 1862
+    #> [1] 732
     #> 
     #> $hospitalized
     #> NULL
     #> 
     #> $total
-    #> [1] 161309
+    #> [1] 314790
     #> 
     #> $totalTestResults
-    #> [1] 161309
+    #> [1] 314790
     #> 
     #> $posNeg
-    #> [1] 161309
+    #> [1] 314790
     #> 
     #> $fips
-    #> [1] "22"
+    #> [1] "48"
     #> 
     #> $dateModified
-    #> [1] "2020-04-30T17:00:00Z"
+    #> [1] "2020-04-29T17:00:00Z"
     #> 
     #> $dateChecked
-    #> [1] "2020-04-30T18:43:00Z"
+    #> [1] "2020-04-30T19:02:00Z"
     #> 
     #> $hash
-    #> [1] "6d107e9964b2d861b6b1bd33ada5c4e1dedadca0"
+    #> [1] "8245b0e9a3549131b074502d8c7f0455d3f15328"
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
