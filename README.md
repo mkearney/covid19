@@ -84,28 +84,95 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 30
-    #>    state positive positive_score negative_score negative_regula…
-    #>    <chr>    <int>          <int>          <int>            <int>
-    #>  1 AK         355              1              1                1
-    #>  2 AL        7019              1              1                0
-    #>  3 AR        3255              1              1                1
-    #>  4 AZ        7648              1              1                0
-    #>  5 CA       48917              1              1                0
-    #>  6 CO       14758              1              1                1
-    #>  7 CT       27700              1              1                1
-    #>  8 DC        4323              1              1                1
-    #>  9 DE        4734              1              1                1
-    #> 10 FL       33690              1              1                1
-    #> # … with 46 more rows, and 25 more variables: commercial_score <int>,
-    #> #   grade <chr>, score <int>, notes <chr>, data_quality_grade <chr>,
-    #> #   negative <int>, pending <int>, hospitalized_currently <int>,
-    #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
-    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
-    #> #   on_ventilator_cumulative <int>, recovered <int>, last_update_et <chr>,
-    #> #   check_time_et <chr>, death <int>, hospitalized <int>, total <int>,
-    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, date_modified <dttm>,
-    #> #   date_checked <dttm>, hash <chr>
+    #> $state
+    #> [1] "LA"
+    #> 
+    #> $positive
+    #> [1] 28001
+    #> 
+    #> $positiveScore
+    #> [1] 1
+    #> 
+    #> $negativeScore
+    #> [1] 1
+    #> 
+    #> $negativeRegularScore
+    #> [1] 1
+    #> 
+    #> $commercialScore
+    #> [1] 1
+    #> 
+    #> $grade
+    #> [1] "A"
+    #> 
+    #> $score
+    #> [1] 4
+    #> 
+    #> $notes
+    #> [1] "Please stop using the \"total\" field. Use \"totalTestResults\" instead. As of 4/24/20, \"grade\" is deprecated. Please use \"dataQualityGrade\" instead."
+    #> 
+    #> $dataQualityGrade
+    #> [1] "B"
+    #> 
+    #> $negative
+    #> [1] 133308
+    #> 
+    #> $pending
+    #> NULL
+    #> 
+    #> $hospitalizedCurrently
+    #> [1] 1601
+    #> 
+    #> $hospitalizedCumulative
+    #> NULL
+    #> 
+    #> $inIcuCurrently
+    #> NULL
+    #> 
+    #> $inIcuCumulative
+    #> NULL
+    #> 
+    #> $onVentilatorCurrently
+    #> [1] 231
+    #> 
+    #> $onVentilatorCumulative
+    #> NULL
+    #> 
+    #> $recovered
+    #> [1] 17303
+    #> 
+    #> $lastUpdateEt
+    #> [1] "4/30 13:00"
+    #> 
+    #> $checkTimeEt
+    #> [1] "4/30 14:43"
+    #> 
+    #> $death
+    #> [1] 1862
+    #> 
+    #> $hospitalized
+    #> NULL
+    #> 
+    #> $total
+    #> [1] 161309
+    #> 
+    #> $totalTestResults
+    #> [1] 161309
+    #> 
+    #> $posNeg
+    #> [1] 161309
+    #> 
+    #> $fips
+    #> [1] "22"
+    #> 
+    #> $dateModified
+    #> [1] "2020-04-30T17:00:00Z"
+    #> 
+    #> $dateChecked
+    #> [1] "2020-04-30T18:43:00Z"
+    #> 
+    #> $hash
+    #> [1] "6d107e9964b2d861b6b1bd33ada5c4e1dedadca0"
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
