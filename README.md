@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 18
     #>   positive negative pending hospitalized_cu… hospitalized_cu… in_icu_currently
     #>      <int>    <int>   <int>            <int>            <int>            <int>
-    #> 1  1152006  5901360    2812            50312           125796             9292
+    #> 1  1157057  5966165    2790            50030           126298             9170
     #> # … with 12 more variables: in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, hash <chr>, last_modified <dttm>, death <int>,
@@ -88,15 +88,15 @@ grouped by similar endpoints and included below.
     #>    state positive positive_score negative_score negative_regula…
     #>    <chr>    <int>          <int>          <int>            <int>
     #>  1 AK         368              1              1                1
-    #>  2 AL        7725              1              1                0
+    #>  2 AL        7898              1              1                0
     #>  3 AR        3431              1              1                1
     #>  4 AZ        8640              1              1                0
     #>  5 CA       53616              1              1                0
-    #>  6 CO       16225              1              1                1
+    #>  6 CO       16635              1              1                1
     #>  7 CT       29287              1              1                1
-    #>  8 DC        5016              1              1                1
+    #>  8 DC        5170              1              1                1
     #>  9 DE        5208              1              1                1
-    #> 10 FL       36078              1              1                1
+    #> 10 FL       36897              1              1                1
     #> # … with 46 more rows, and 25 more variables: commercial_score <int>,
     #> #   grade <chr>, score <int>, notes <chr>, data_quality_grade <chr>,
     #> #   negative <int>, pending <int>, hospitalized_currently <int>,
