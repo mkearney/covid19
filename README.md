@@ -114,7 +114,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 3,377 x 25
+    #> # A tibble: 3,377 x 27
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-05-04 AK         370    21353      NA               12               NA
@@ -127,13 +127,14 @@ grouped by similar endpoints and included below.
     #>  8 2020-05-04 CT       29287    73206      NA             1488             7758
     #>  9 2020-05-04 DC        5170    18625      NA              447               NA
     #> 10 2020-05-04 DE        5288    18822      NA              281               NA
-    #> # … with 3,367 more rows, and 18 more variables: in_icu_currently <int>,
+    #> # … with 3,367 more rows, and 20 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
-    #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
-    #> #   date_checked <dttm>, death <int>, hospitalized <int>, total <int>,
-    #> #   total_test_results <int>, pos_neg <int>, fips <chr>, death_increase <int>,
-    #> #   hospitalized_increase <int>, negative_increase <int>,
-    #> #   positive_increase <int>, total_test_results_increase <int>
+    #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
+    #> #   last_update_et <chr>, hash <chr>, date_checked <dttm>, death <int>,
+    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
+    #> #   fips <chr>, death_increase <int>, hospitalized_increase <int>,
+    #> #   negative_increase <int>, positive_increase <int>,
+    #> #   total_test_results_increase <int>
     ```
 
   - **`covid19_states_info()`**: State government links, Twitter
