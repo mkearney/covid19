@@ -210,20 +210,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_press()
-    #> # A tibble: 138 x 15
+    #> # A tibble: 141 x 15
     #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
     #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 Coro… http… TRUE             NA               FALSE           
-    #>  2 Amid… http… TRUE             TRUE             NA              
-    #>  3 Inst… http… TRUE             TRUE             FALSE           
-    #>  4 Coro… http… TRUE             TRUE             FALSE           
-    #>  5 Kans… http… TRUE             NA               FALSE           
-    #>  6 Dunl… http… TRUE             NA               FALSE           
-    #>  7 No p… http… NA               NA               FALSE           
-    #>  8 Abbo… http… NA               NA               FALSE           
-    #>  9 Here… http… TRUE             TRUE             FALSE           
+    #>  1 Geor… http… NA               NA               NA              
+    #>  2 A St… http… NA               NA               NA              
+    #>  3 Whit… http… NA               NA               TRUE            
+    #>  4 Coro… http… TRUE             NA               FALSE           
+    #>  5 Amid… http… TRUE             TRUE             NA              
+    #>  6 Inst… http… TRUE             TRUE             FALSE           
+    #>  7 Coro… http… TRUE             TRUE             FALSE           
+    #>  8 Kans… http… TRUE             NA               FALSE           
+    #>  9 Dunl… http… TRUE             NA               FALSE           
     #> 10 No p… http… NA               NA               FALSE           
-    #> # … with 128 more rows, and 10 more variables: publish_date <dttm>,
+    #> # … with 131 more rows, and 10 more variables: publish_date <dttm>,
     #> #   continually_updated <lgl>, publication <chr>, author <chr>,
     #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
     #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
@@ -235,7 +235,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 11,711 x 6
+    #> # A tibble: 11,741 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +248,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 11,701 more rows
+    #> # … with 11,731 more rows
     ```
