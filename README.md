@@ -65,8 +65,8 @@ grouped by similar endpoints and included below.
     #>  6 2020-05-01     56  1095681  5456129    1639            52370           121748
     #>  7 2020-04-30     56  1062503  5193266    2775            53793           111987
     #>  8 2020-04-29     56  1033157  4993013    4832            54930           109690
-    #>  9 2020-04-28     56  1005789  4790136    4206            54940           106308
-    #> 10 2020-04-27     56   981760  4612361    4077            54971           104249
+    #>  9 2020-04-28     56  1006137  4790136    4206            54940           106308
+    #> 10 2020-04-27     56   981134  4612361    4077            54971           104249
     #> # … with 96 more rows, and 17 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, hash <chr>,
