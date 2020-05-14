@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 113 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-05-13     56  1382304  8592018    1983            44514           149347
+    #>  1 2020-05-13     56  1382304  8592527    1983            44514           149347
     #>  2 2020-05-12     56  1360705  8277225    1803            45199           142861
     #>  3 2020-05-11     56  1340412  8008046    1989            44191           145981
     #>  4 2020-05-10     56  1322807  7637355    3095            44943           144780
@@ -125,7 +125,7 @@ grouped by similar endpoints and included below.
     #>  6 2020-05-13 CA       71141   994451      NA             4545               NA
     #>  7 2020-05-13 CO       20157    91093      NA              688             3695
     #>  8 2020-05-13 CT       34855   108088      NA             1158             9389
-    #>  9 2020-05-13 DC        6584    24565      NA              423               NA
+    #>  9 2020-05-13 DC        6584    25074      NA              423               NA
     #> 10 2020-05-13 DE        6952    27801      NA              282               NA
     #> # … with 3,871 more rows, and 20 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
@@ -235,7 +235,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 14,108 x 6
+    #> # A tibble: 14,191 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +248,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 14,098 more rows
+    #> # … with 14,181 more rows
     ```
