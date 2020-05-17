@@ -200,7 +200,7 @@ grouped by similar endpoints and included below.
     #>  6 url   Colora… "https://covid19.c… "css:article .parag… CO       NA           
     #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
     #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
-    #>  9 url   Delawa… "https://services1… "css:.ftrTable,html… DE       NA           
+    #>  9 url   Delawa… "https://myhealthy… "css:div.c-summary-… DE       NA           
     #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
     #> # … with 46 more rows
     ```
