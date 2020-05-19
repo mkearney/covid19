@@ -114,27 +114,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 4,161 x 27
-    #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
-    #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-05-18 AK         399    35212      NA                9               NA
-    #>  2 2020-05-18 AL       12086   145037      NA               NA             1416
-    #>  3 2020-05-18 AR        4813    80426      NA               77              530
-    #>  4 2020-05-18 AS           0      105      NA               NA               NA
-    #>  5 2020-05-18 AZ       14170   142303      NA              820             1717
-    #>  6 2020-05-18 CA       80430  1212242      NA             4391               NA
-    #>  7 2020-05-18 CO       21938   106557      NA              650             3872
-    #>  8 2020-05-18 CT       38116   139563      NA              920            10946
-    #>  9 2020-05-18 DC        7270    30555      NA              374               NA
-    #> 10 2020-05-18 DE        7869    34589      NA              240               NA
-    #> # … with 4,151 more rows, and 20 more variables: in_icu_currently <int>,
-    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
-    #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
-    #> #   last_update_et <chr>, hash <chr>, date_checked <dttm>, death <int>,
-    #> #   hospitalized <int>, total <int>, total_test_results <int>, pos_neg <int>,
-    #> #   fips <chr>, death_increase <int>, hospitalized_increase <int>,
-    #> #   negative_increase <int>, positive_increase <int>,
-    #> #   total_test_results_increase <int>
+    #> # A tibble: 0 x 0
     ```
 
   - **`covid19_states_info()`**: State government links, Twitter
@@ -142,20 +122,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_info()
-    #> # A tibble: 56 x 10
-    #>    state covid19site_old covid19site covid19site_sec… twitter pui   pum   notes
-    #>    <chr> <chr>           <chr>       <chr>            <chr>   <chr> <lgl> <chr>
-    #>  1 AK    http://dhss.al… http://dhs… http://dhss.ala… @Alask… All … FALSE "Tot…
-    #>  2 AL    http://www.ala… https://al… https://dph1.ad… @alpub… No d… FALSE "Neg…
-    #>  3 AR    https://www.he… https://ww… https://adem.ma… @adhpio All … TRUE   <NA>
-    #>  4 AS    http://www.sam… https://ww… https://www.fac… <NA>    No D… FALSE "Our…
-    #>  5 AZ    https://www.az… https://ww… https://www.azd… @azdhs  All … FALSE "Das…
-    #>  6 CA    https://www.cd… https://ww… https://www.cdp… @CAPub… Only… FALSE "Cal…
-    #>  7 CO    https://www.co… https://co… <NA>             @cdphe  Posi… FALSE "Neg…
-    #>  8 CT    https://portal… https://da… <NA>             @ctdph  All … FALSE "Neg…
-    #>  9 DC    https://corona… https://co… <NA>             @_DCHe… All … FALSE "Pos…
-    #> 10 DE    https://dhss.d… https://dh… <NA>             @Delaw… All … TRUE  "As …
-    #> # … with 46 more rows, and 2 more variables: fips <chr>, name <chr>
+    #> # A tibble: 0 x 0
     ```
 
 ![](man/figures/README-state-trajectories.png)
@@ -235,7 +202,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 16,038 x 6
+    #> # A tibble: 16,122 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +215,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 16,028 more rows
+    #> # … with 16,112 more rows
     ```
