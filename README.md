@@ -200,7 +200,7 @@ grouped by similar endpoints and included below.
     #>  6 url   Colora… "https://covid19.c… "css:article .parag… CO       NA           
     #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
     #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
-    #>  9 url   Delawa… "https://myhealthy… "css:div.c-summary-… DE       NA           
+    #>  9 url   Delawa… "https://myhealthy… "css:div.c-dashboar… DE       NA           
     #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
     #> # … with 46 more rows
     ```
@@ -235,7 +235,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 16,460 x 6
+    #> # A tibble: 16,546 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +248,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 16,450 more rows
+    #> # … with 16,536 more rows
     ```
