@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 121 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-05-21     56  1567427 11488779    3641            39915           166254
+    #>  1 2020-05-21     56  1567427 11482479    3641            39915           166254
     #>  2 2020-05-20     56  1542309 11105482    2973            40884           161616
     #>  3 2020-05-19     56  1520778 10713676    2944            41174           159634
     #>  4 2020-05-18     56  1499726 10335448    3596            40933           157963
@@ -124,7 +124,7 @@ grouped by similar endpoints and included below.
     #>  5 2020-05-21 AZ       15315   156312      NA              812             1830
     #>  6 2020-05-21 CA       86197  1334930      NA             4735               NA
     #>  7 2020-05-21 CO       22797   112814      NA              613             3990
-    #>  8 2020-05-21 CT       39208   163539      NA              816            10946
+    #>  8 2020-05-21 CT       39208   157239      NA              816            10946
     #>  9 2020-05-21 DC        7788    33968      NA              336               NA
     #> 10 2020-05-21 DE        8386    39156      NA              220               NA
     #> # … with 4,319 more rows, and 20 more variables: in_icu_currently <int>,
