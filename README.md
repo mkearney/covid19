@@ -57,7 +57,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 128 x 24
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-05-28     56  1712637 13933404    1906            36967           194975
+    #>  1 2020-05-28     56  1712637 13894602    1906            36967           194975
     #>  2 2020-05-27     56  1689630 13502851    3132            37253           192446
     #>  3 2020-05-26     56  1671035 13236006    1549            36609           190823
     #>  4 2020-05-25     56  1654829 12950113    3368            36668           173541
