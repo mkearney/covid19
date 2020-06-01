@@ -235,7 +235,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 20,215 x 6
+    #> # A tibble: 20,301 x 6
     #>    state url                         date_checked        secondary date     size
     #>    <chr> <chr>                       <dttm>              <lgl>     <chr>   <int>
     #>  1 AK    https://covidtracking.com/… 2020-03-15 06:13:15 FALSE     20200… 563460
@@ -248,5 +248,5 @@ grouped by similar endpoints and included below.
     #>  8 AK    https://covidtracking.com/… 2020-03-18 18:01:15 FALSE     20200… 569429
     #>  9 AK    https://covidtracking.com/… 2020-03-18 23:00:43 FALSE     20200… 517287
     #> 10 AK    https://covidtracking.com/… 2020-03-19 05:00:25 FALSE     20200… 524988
-    #> # … with 20,205 more rows
+    #> # … with 20,291 more rows
     ```
