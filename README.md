@@ -88,16 +88,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 35
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-06-01 WY         910    24237      NA                8               86
-    #>  2 2020-06-01 WV        2017    96078      NA               31               NA
-    #>  3 2020-06-01 WI       18543   253595     211              613             2603
-    #>  4 2020-06-01 WA       21702   339197      NA              245             3501
-    #>  5 2020-06-01 VT         983    34343      NA               16               NA
-    #>  6 2020-06-01 VI          70     1741       4               NA               NA
-    #>  7 2020-06-01 VA       45398   279321     419             1371             7326
-    #>  8 2020-06-01 UT        9999   208113      NA              134              789
-    #>  9 2020-06-01 TX       64880   905151      NA             1756               NA
-    #> 10 2020-06-01 TN       23554   424939      NA               NA             1767
+    #>  1 2020-06-01 AK         467    53723      NA               10               NA
+    #>  2 2020-06-01 AL       18363   205160      NA               NA             1856
+    #>  3 2020-06-01 AR        7443   125793      NA              115              711
+    #>  4 2020-06-01 AS           0      174      NA               NA               NA
+    #>  5 2020-06-01 AZ       20123   207947      NA              968             3018
+    #>  6 2020-06-01 CA      113006  1899577      NA             4258               NA
+    #>  7 2020-06-01 CO       26378   159998      NA              414             4347
+    #>  8 2020-06-01 CT       42740   218650      NA              454            13793
+    #>  9 2020-06-01 DC        8857    38406      NA              302               NA
+    #> 10 2020-06-01 DE        9605    52842      NA              159               NA
     #> # … with 46 more rows, and 28 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
@@ -119,16 +119,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 4,945 x 35
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-06-01 WY         910    24237      NA                8               86
-    #>  2 2020-06-01 WV        2017    96078      NA               31               NA
-    #>  3 2020-06-01 WI       18543   253595     211              613             2603
-    #>  4 2020-06-01 WA       21702   339197      NA              245             3501
-    #>  5 2020-06-01 VT         983    34343      NA               16               NA
-    #>  6 2020-06-01 VI          70     1741       4               NA               NA
-    #>  7 2020-06-01 VA       45398   279321     419             1371             7326
-    #>  8 2020-06-01 UT        9999   208113      NA              134              789
-    #>  9 2020-06-01 TX       64880   905151      NA             1756               NA
-    #> 10 2020-06-01 TN       23554   424939      NA               NA             1767
+    #>  1 2020-06-01 AK         467    53723      NA               10               NA
+    #>  2 2020-06-01 AL       18363   205160      NA               NA             1856
+    #>  3 2020-06-01 AR        7443   125793      NA              115              711
+    #>  4 2020-06-01 AS           0      174      NA               NA               NA
+    #>  5 2020-06-01 AZ       20123   207947      NA              968             3018
+    #>  6 2020-06-01 CA      113006  1899577      NA             4258               NA
+    #>  7 2020-06-01 CO       26378   159998      NA              414             4347
+    #>  8 2020-06-01 CT       42740   218650      NA              454            13793
+    #>  9 2020-06-01 DC        8857    38406      NA              302               NA
+    #> 10 2020-06-01 DE        9605    52842      NA              159               NA
     #> # … with 4,935 more rows, and 28 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
