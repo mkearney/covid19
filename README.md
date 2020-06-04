@@ -171,20 +171,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_counties()
-    #> # A tibble: 11 x 7
-    #>    state county   covid19site               data_site main_site   twitter pui   
-    #>    <chr> <chr>    <chr>                     <lgl>     <chr>       <lgl>   <chr> 
-    #>  1 CA    Los Ang… http://publichealth.laco… NA        <NA>        NA      No da…
-    #>  2 NY    Westche… https://health.westchest… NA        <NA>        NA      No da…
-    #>  3 WA    King     https://www.kingcounty.g… NA        <NA>        NA      No da…
-    #>  4 WA    Snohomi… https://www.snohd.org/48… NA        <NA>        NA      All d…
-    #>  5 WA    Grant    http://granthealth.org/2… NA        <NA>        NA      No da…
-    #>  6 WA    Jeffers… https://www.jeffersoncou… NA        <NA>        NA      All d…
-    #>  7 WA    Pierce   https://www.tpchd.org/he… NA        <NA>        NA      Only …
-    #>  8 WA    Clark    https://www.clark.wa.gov… NA        <NA>        NA      All d…
-    #>  9 WA    Kittitas https://www.co.kittitas.… NA        <NA>        NA      No da…
-    #> 10 CA    Contra … https://www.coronavirus.… NA        https://cc… NA      <NA>  
-    #> 11 CA    Alameda… http://www.acphd.org/201… NA        http://www… NA      <NA>
+    #> # A tibble: 0 x 0
     ```
 
 ### Other
@@ -193,20 +180,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_urls()
-    #> # A tibble: 56 x 6
-    #>    kind  name    url                 filter               state_id ssl_no_verify
-    #>    <chr> <chr>   <chr>               <chr>                <chr>    <lgl>        
-    #>  1 url   Alaska  "https://services1… "css:.ftrTable,html… AK       NA           
-    #>  2 url   Alabama "https://services7… "css:.ftrTable,html… AL       NA           
-    #>  3 url   Arkans… "https://www.healt… "css:#contentBody t… AR       NA           
-    #>  4 url   Arizona "https://tableau.a… "ocr,clean-new-line… AZ       NA           
-    #>  5 url   Califo… "https://www.cdph.… "css:table:contains… CA       NA           
-    #>  6 url   Colora… "https://covid19.c… "css:article .parag… CO       NA           
-    #>  7 url   Connec… "https://data.ct.g… "strip"              CT       NA           
-    #>  8 url   Washin… "https://coronavir… "css:ul:contains(\"… DC       NA           
-    #>  9 url   Delawa… "https://myhealthy… "css:div.c-dashboar… DE       NA           
-    #> 10 url   Florida "https://services1… "css:.ftrTable,html… FL       NA           
-    #> # … with 46 more rows
+    #> # A tibble: 0 x 0
     ```
 
   - **`covid19_press()`**: Information (`title`, `url`, `publication`,
@@ -214,24 +188,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_press()
-    #> # A tibble: 142 x 15
-    #>    title url   add_to_covid_tr… feature_on_covi… about_covid_tra…
-    #>    <chr> <chr> <lgl>            <lgl>            <lgl>           
-    #>  1 Geor… http… TRUE             TRUE             FALSE           
-    #>  2 A St… http… TRUE             TRUE             FALSE           
-    #>  3 16 S… http… TRUE             TRUE             FALSE           
-    #>  4 Whit… http… TRUE             TRUE             TRUE            
-    #>  5 Coro… http… TRUE             NA               FALSE           
-    #>  6 Amid… http… TRUE             TRUE             NA              
-    #>  7 Inst… http… TRUE             TRUE             FALSE           
-    #>  8 Coro… http… TRUE             TRUE             FALSE           
-    #>  9 Kans… http… TRUE             NA               FALSE           
-    #> 10 Dunl… http… TRUE             NA               FALSE           
-    #> # … with 132 more rows, and 10 more variables: publish_date <dttm>,
-    #> #   continually_updated <lgl>, publication <chr>, author <chr>,
-    #> #   does_this_source_have_a_data_visualization <lgl>, data_source <chr>,
-    #> #   uses_covid_tracking_data <chr>, link_to_viz_image <chr>,
-    #> #   twitter_copy <lgl>, language <chr>
+    #> # A tibble: 0 x 0
     ```
 
   - **`covid19_screenshots()`**: Information and paths to screenshots of
@@ -239,18 +196,5 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_screenshots()
-    #> # A tibble: 21,352 x 6
-    #>    state url                         secondary date_checked        date     size
-    #>    <chr> <chr>                       <lgl>     <dttm>              <chr>   <int>
-    #>  1 AK    https://covidtracking.com/… FALSE     2020-03-15 06:13:15 20200… 563460
-    #>  2 AK    https://covidtracking.com/… FALSE     2020-03-15 20:32:25 20200… 432003
-    #>  3 AK    https://covidtracking.com/… FALSE     2020-03-16 14:53:36 20200… 563460
-    #>  4 AK    https://covidtracking.com/… FALSE     2020-03-17 03:06:10 20200… 563522
-    #>  5 AK    https://covidtracking.com/… FALSE     2020-03-17 18:09:31 20200… 567852
-    #>  6 AK    https://covidtracking.com/… FALSE     2020-03-17 22:00:17 20200… 565619
-    #>  7 AK    https://covidtracking.com/… FALSE     2020-03-18 05:00:17 20200… 568859
-    #>  8 AK    https://covidtracking.com/… FALSE     2020-03-18 18:01:15 20200… 569429
-    #>  9 AK    https://covidtracking.com/… FALSE     2020-03-18 23:00:43 20200… 517287
-    #> 10 AK    https://covidtracking.com/… FALSE     2020-03-19 05:00:25 20200… 524988
-    #> # … with 21,342 more rows
+    #> # A tibble: 0 x 0
     ```
