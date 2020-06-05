@@ -146,20 +146,21 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_info()
-    #> # A tibble: 56 x 10
-    #>    state notes covid19site covid19site_sec… twitter covid19site_old name  fips 
-    #>    <chr> <chr> <chr>       <chr>            <chr>   <chr>           <chr> <chr>
-    #>  1 AK    "Tot… http://dhs… "http://dhss.al… "@Alas… http://dhss.al… Alas… 02   
-    #>  2 AL    "Neg… https://al… "https://dph1.a… "@alpu… http://www.ala… Alab… 01   
-    #>  3 AR     <NA> https://ww… "https://adem.m… "@adhp… https://www.he… Arka… 05   
-    #>  4 AS    "Our… https://ww… "https://www.fa… ""      http://www.sam… Amer… 60   
-    #>  5 AZ    "Das… https://ww… "https://www.az… "@azdh… https://www.az… Ariz… 04   
-    #>  6 CA    "Cal… https://ww… "https://www.cd… "@CAPu… https://www.cd… Cali… 06   
-    #>  7 CO    "Neg… https://co… "https://covid1… "@cdph… https://www.co… Colo… 08   
-    #>  8 CT    "Neg… https://da… ""               "@ctdp… https://portal… Conn… 09   
-    #>  9 DC    "Pos… https://co… ""               "@_DCH… https://corona… Dist… 11   
-    #> 10 DE    "As … https://dh… ""               "@Dela… https://dhss.d… Dela… 10   
-    #> # … with 46 more rows, and 2 more variables: pui <chr>, pum <lgl>
+    #> # A tibble: 56 x 11
+    #>    state notes covid19site covid19site_sec… covid19site_ter… twitter
+    #>    <chr> <chr> <chr>       <chr>            <chr>            <chr>  
+    #>  1 AK    "Tot… http://dhs… "http://dhss.al… ""               "@Alas…
+    #>  2 AL    "Neg… https://al… "https://dph1.a… ""               "@alpu…
+    #>  3 AR     <NA> https://ww… "https://adem.m… ""               "@adhp…
+    #>  4 AS    "Our… https://ww… "https://www.fa… ""               ""     
+    #>  5 AZ    "Das… https://ww… "https://www.az… ""               "@azdh…
+    #>  6 CA    "Cal… https://ww… "https://www.cd… ""               "@CAPu…
+    #>  7 CO    "Neg… https://co… "https://covid1… ""               "@cdph…
+    #>  8 CT    "Neg… https://da… ""               ""               "@ctdp…
+    #>  9 DC    "Pos… https://co… ""               ""               "@_DCH…
+    #> 10 DE    "As … https://dh… ""               ""               "@Dela…
+    #> # … with 46 more rows, and 5 more variables: covid19site_old <chr>, name <chr>,
+    #> #   fips <chr>, pui <chr>, pum <lgl>
     ```
 
 ![](man/figures/README-state-trajectories.png)
