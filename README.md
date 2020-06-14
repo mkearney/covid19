@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative   pending hospitalized_cu…
     #>   <date>      <int>    <int> <date>       <int>            <int>
-    #> 1 2020-06-13     56  2063249 NA            1698            27902
+    #> 1 2020-06-13     56  2063542 NA            1698            27902
     #> # … with 19 more variables: hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
@@ -59,16 +59,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 144 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-06-13     56  2063249 20977055    1698            27902           224420
-    #>  2 2020-06-12     56  2037530 20479732    1783            28524           223281
-    #>  3 2020-06-11     56  2013778 19919523    1816            29064           221983
-    #>  4 2020-06-10     56  1991527 19495009    1737            30203           220602
-    #>  5 2020-06-09     56  1970765 19096303    1661            30547           219089
-    #>  6 2020-06-08     56  1953730 18699572    1606            29969           217581
-    #>  7 2020-06-07     56  1936717 18314468    1733            30299           216906
-    #>  8 2020-06-06     56  1917160 17887374    1796            30909           216259
-    #>  9 2020-06-05     56  1894449 17431649    1749            31335           215252
-    #> 10 2020-06-04     56  1871150 16915074    3474            31659           213812
+    #>  1 2020-06-13     56  2063542 20986480    1698            27902           224420
+    #>  2 2020-06-12     56  2038198 20491914    1783            28524           223281
+    #>  3 2020-06-11     56  2014880 19931814    1816            29064           221983
+    #>  4 2020-06-10     56  1992857 19505717    1737            30203           220602
+    #>  5 2020-06-09     56  1972108 19103762    1661            30547           219089
+    #>  6 2020-06-08     56  1954942 18705046    1606            29969           217581
+    #>  7 2020-06-07     56  1937819 18322304    1733            30299           216906
+    #>  8 2020-06-06     56  1918512 17896135    1796            30909           216259
+    #>  9 2020-06-05     56  1896157 17440786    1749            31335           215252
+    #> 10 2020-06-04     56  1873167 16959583    3474            31659           213812
     #> # … with 134 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, date_checked <dttm>,
