@@ -88,16 +88,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 39
     #>    date       state positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-06-20 AK         743    86175      NA               16               NA
-    #>  2 2020-06-20 AL       29549   309974      NA              628             2443
-    #>  3 2020-06-20 AR       15142   227092      NA              224             1100
-    #>  4 2020-06-20 AS           0      174      NA               NA               NA
-    #>  5 2020-06-20 AZ       49798   355482      NA             1938             4140
-    #>  6 2020-06-20 CA      169309  3065103      NA             4582               NA
-    #>  7 2020-06-20 CO       30187   242882      NA              250             5318
-    #>  8 2020-06-20 CT       45715   345940      NA              150            10099
-    #>  9 2020-06-20 DC        9984    67969      NA              177               NA
-    #> 10 2020-06-20 DE       10681    81735      NA               75               NA
+    #>  1 2020-06-21 AK         755    87296      NA               15               NA
+    #>  2 2020-06-21 AL       30021   314657      NA              593             2460
+    #>  3 2020-06-21 AR       15142   227092      NA              240             1152
+    #>  4 2020-06-21 AS           0      174      NA               NA               NA
+    #>  5 2020-06-21 AZ       52390   367354      NA             1942             4161
+    #>  6 2020-06-21 CA      173824  3145432      NA             4679               NA
+    #>  7 2020-06-21 CO       30349   248037      NA              255             5323
+    #>  8 2020-06-21 CT       45755   349673      NA              149            10099
+    #>  9 2020-06-21 DC       10020    69502      NA              168               NA
+    #> 10 2020-06-21 DE       10775    84199      NA               79               NA
     #> # … with 46 more rows, and 32 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
