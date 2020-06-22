@@ -67,7 +67,7 @@ grouped by similar endpoints and included below.
     #>  7 2020-06-15     56  2103549 21881043    1619            27115           225570
     #>  8 2020-06-14     56  2085028 21450076    1672            27247           225061
     #>  9 2020-06-13     56  2063542 20986480    1698            27902           224420
-    #> 10 2020-06-12     56  2038198 20491914    1783            28524           223281
+    #> 10 2020-06-12     56  2038198 20503457    1783            28524           223281
     #> # … with 142 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, date_checked <dttm>,
