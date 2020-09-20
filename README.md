@@ -85,7 +85,176 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 54
+    #> $date
+    #> [1] 20200919
+    #> 
+    #> $state
+    #> [1] "CT"
+    #> 
+    #> $positive
+    #> [1] 55527
+    #> 
+    #> $negative
+    #> [1] 1366621
+    #> 
+    #> $pending
+    #> NULL
+    #> 
+    #> $totalTestResults
+    #> [1] 1422148
+    #> 
+    #> $hospitalizedCurrently
+    #> [1] 77
+    #> 
+    #> $hospitalizedCumulative
+    #> [1] 11447
+    #> 
+    #> $inIcuCurrently
+    #> NULL
+    #> 
+    #> $inIcuCumulative
+    #> NULL
+    #> 
+    #> $onVentilatorCurrently
+    #> NULL
+    #> 
+    #> $onVentilatorCumulative
+    #> NULL
+    #> 
+    #> $recovered
+    #> [1] 9204
+    #> 
+    #> $dataQualityGrade
+    #> [1] "B"
+    #> 
+    #> $lastUpdateEt
+    #> [1] "9/17/2020 20:30"
+    #> 
+    #> $dateModified
+    #> [1] "2020-09-17T20:30:00Z"
+    #> 
+    #> $checkTimeEt
+    #> [1] "09/17 16:30"
+    #> 
+    #> $death
+    #> [1] 4492
+    #> 
+    #> $hospitalized
+    #> [1] 11447
+    #> 
+    #> $dateChecked
+    #> [1] "2020-09-17T20:30:00Z"
+    #> 
+    #> $totalTestsViral
+    #> [1] 1419839
+    #> 
+    #> $positiveTestsViral
+    #> NULL
+    #> 
+    #> $negativeTestsViral
+    #> NULL
+    #> 
+    #> $positiveCasesViral
+    #> [1] 53218
+    #> 
+    #> $deathConfirmed
+    #> [1] 3597
+    #> 
+    #> $deathProbable
+    #> [1] 895
+    #> 
+    #> $totalTestEncountersViral
+    #> NULL
+    #> 
+    #> $totalTestsPeopleViral
+    #> NULL
+    #> 
+    #> $totalTestsAntibody
+    #> NULL
+    #> 
+    #> $positiveTestsAntibody
+    #> NULL
+    #> 
+    #> $negativeTestsAntibody
+    #> NULL
+    #> 
+    #> $totalTestsPeopleAntibody
+    #> NULL
+    #> 
+    #> $positiveTestsPeopleAntibody
+    #> NULL
+    #> 
+    #> $negativeTestsPeopleAntibody
+    #> NULL
+    #> 
+    #> $totalTestsPeopleAntigen
+    #> NULL
+    #> 
+    #> $positiveTestsPeopleAntigen
+    #> NULL
+    #> 
+    #> $totalTestsAntigen
+    #> NULL
+    #> 
+    #> $positiveTestsAntigen
+    #> NULL
+    #> 
+    #> $fips
+    #> [1] "09"
+    #> 
+    #> $positiveIncrease
+    #> [1] 0
+    #> 
+    #> $negativeIncrease
+    #> [1] 0
+    #> 
+    #> $total
+    #> [1] 1422148
+    #> 
+    #> $totalTestResultsSource
+    #> [1] "posNeg"
+    #> 
+    #> $totalTestResultsIncrease
+    #> [1] 0
+    #> 
+    #> $posNeg
+    #> [1] 1422148
+    #> 
+    #> $deathIncrease
+    #> [1] 0
+    #> 
+    #> $hospitalizedIncrease
+    #> [1] 0
+    #> 
+    #> $hash
+    #> [1] "37f86cb35187ab8b462bed2e12880222ce795933"
+    #> 
+    #> $commercialScore
+    #> [1] 0
+    #> 
+    #> $negativeRegularScore
+    #> [1] 0
+    #> 
+    #> $negativeScore
+    #> [1] 0
+    #> 
+    #> $positiveScore
+    #> [1] 0
+    #> 
+    #> $score
+    #> [1] 0
+    #> 
+    #> $grade
+    #> [1] ""
+    ```
+
+  - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
+    `pos_neg` (positive + negative), `hospitalized`, `death`, `total`)
+    by day
+    
+    ``` r
+    covid19_states_daily()
+    #> # A tibble: 11,186 x 54
     #>    date       state positive negative pending total_test_resu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
     #>  1 2020-09-19 AK        7674   415176      NA           422850               41
@@ -98,15 +267,16 @@ grouped by similar endpoints and included below.
     #>  8 2020-09-19 CT       55527  1366621      NA          1422148               77
     #>  9 2020-09-19 DC       14902   335975      NA           350877               85
     #> 10 2020-09-19 DE       19449   250262      NA           269711               53
-    #> # … with 46 more rows, and 47 more variables: hospitalized_cumulative <int>,
-    #> #   in_icu_currently <int>, in_icu_cumulative <int>,
-    #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
-    #> #   recovered <int>, data_quality_grade <chr>, last_update_et <chr>,
-    #> #   date_modified <dttm>, check_time_et <chr>, death <int>, hospitalized <int>,
-    #> #   date_checked <dttm>, total_tests_viral <int>, positive_tests_viral <int>,
+    #> # … with 11,176 more rows, and 47 more variables:
+    #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
+    #> #   last_update_et <chr>, date_modified <chr>, check_time_et <chr>,
+    #> #   death <int>, hospitalized <int>, date_checked <chr>,
+    #> #   total_tests_viral <int>, positive_tests_viral <int>,
     #> #   negative_tests_viral <int>, positive_cases_viral <int>,
     #> #   death_confirmed <int>, death_probable <int>,
-    #> #   total_test_encounters_viral <int>, total_tests_people_viral <int>,
+    #> #   total_test_encounters_viral <dbl>, total_tests_people_viral <int>,
     #> #   total_tests_antibody <int>, positive_tests_antibody <int>,
     #> #   negative_tests_antibody <int>, total_tests_people_antibody <int>,
     #> #   positive_tests_people_antibody <int>, negative_tests_people_antibody <int>,
@@ -119,21 +289,29 @@ grouped by similar endpoints and included below.
     #> #   negative_score <int>, positive_score <int>, score <int>, grade <chr>
     ```
 
-  - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
-    `pos_neg` (positive + negative), `hospitalized`, `death`, `total`)
-    by day
-    
-    ``` r
-    covid19_states_daily()
-    #> # A tibble: 0 x 0
-    ```
-
   - **`covid19_states_info()`**: State government links, Twitter
     accounts, notes, etc.
     
     ``` r
     covid19_states_info()
-    #> # A tibble: 0 x 0
+    #> # A tibble: 56 x 14
+    #>    state notes covid19site covid19site_sec… covid19site_ter… twitter
+    #>    <chr> <chr> <chr>       <chr>            <chr>            <chr>  
+    #>  1 AK    "Ala… http://dhs… "https://experi… "https://alaska… "@Alas…
+    #>  2 AL    "Ala… https://al… "https://alpubl… "https://servic… "@alpu…
+    #>  3 AR    "On … https://ww… "https://experi… "https://experi… "@adhp…
+    #>  4 AS    "Ame… https://ww… "https://www.fa… ""               ""     
+    #>  5 AZ    "Ari… https://ww… "https://tablea… "https://tablea… "@azdh…
+    #>  6 CA    "Pri… https://up… "https://public… "https://public… "@CAPu…
+    #>  7 CO    "On … https://co… "https://public… ""               "@cdph…
+    #>  8 CT    "On … https://da… ""               ""               "@ctdp…
+    #>  9 DC    "On … https://co… ""               ""               "@_DCH…
+    #> 10 DE    "On … https://my… ""               ""               "@Dela…
+    #> # … with 46 more rows, and 8 more variables: covid19site_old <chr>,
+    #> #   covid_tracking_project_preferred_total_test_units <chr>,
+    #> #   covid_tracking_project_preferred_total_test_field <chr>,
+    #> #   total_test_results_field <chr>, name <chr>, fips <chr>, pui <chr>,
+    #> #   pum <lgl>
     ```
 
 ![](man/figures/README-state-trajectories.png)
