@@ -55,80 +55,26 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> $date
-    #> [1] 20200311
-    #> 
-    #> $states
-    #> [1] 51
-    #> 
-    #> $positive
-    #> [1] 1834
-    #> 
-    #> $negative
-    #> [1] 11188
-    #> 
-    #> $pending
-    #> [1] 563
-    #> 
-    #> $hospitalizedCurrently
-    #> NULL
-    #> 
-    #> $hospitalizedCumulative
-    #> [1] 11
-    #> 
-    #> $inIcuCurrently
-    #> NULL
-    #> 
-    #> $inIcuCumulative
-    #> NULL
-    #> 
-    #> $onVentilatorCurrently
-    #> NULL
-    #> 
-    #> $onVentilatorCumulative
-    #> NULL
-    #> 
-    #> $recovered
-    #> NULL
-    #> 
-    #> $dateChecked
-    #> [1] "2020-03-11T00:00:00Z"
-    #> 
-    #> $death
-    #> [1] 43
-    #> 
-    #> $hospitalized
-    #> [1] 11
-    #> 
-    #> $totalTestResults
-    #> [1] 19936
-    #> 
-    #> $lastModified
-    #> [1] "2020-03-11T00:00:00Z"
-    #> 
-    #> $total
-    #> [1] 0
-    #> 
-    #> $posNeg
-    #> [1] 0
-    #> 
-    #> $deathIncrease
-    #> [1] 6
-    #> 
-    #> $hospitalizedIncrease
-    #> [1] 3
-    #> 
-    #> $negativeIncrease
-    #> [1] 3421
-    #> 
-    #> $positiveIncrease
-    #> [1] 449
-    #> 
-    #> $totalTestResultsIncrease
-    #> [1] 3968
-    #> 
-    #> $hash
-    #> [1] "f846675fe11d491e5c9009d0541b0850ba4498d5"
+    #> # A tibble: 243 x 25
+    #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
+    #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
+    #>  1 2020-09-20     56  6770401 85299596   13192            28615           395197
+    #>  2 2020-09-19     56  6733110 84510700   13217            29025           394687
+    #>  3 2020-09-18     56  6688827 83566093   11805            29492           393596
+    #>  4 2020-09-17     56  6641341 82709952   11768            29900           392173
+    #>  5 2020-09-16     56  6597783 81976741   10587            30278           390624
+    #>  6 2020-09-15     56  6557762 81351140    4966            30327           389107
+    #>  7 2020-09-14     56  6522317 80701552   10494            29867           387616
+    #>  8 2020-09-13     56  6488453 80329804   10467            29816           386679
+    #>  9 2020-09-12     56  6454000 79717367   10403            30662           386087
+    #> 10 2020-09-11     56  6411913 78910645   10813            31421           385011
+    #> # … with 233 more rows, and 18 more variables: in_icu_currently <int>,
+    #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
+    #> #   on_ventilator_cumulative <int>, recovered <int>, date_checked <dttm>,
+    #> #   death <int>, hospitalized <int>, total_test_results <int>,
+    #> #   last_modified <dttm>, total <int>, pos_neg <int>, death_increase <int>,
+    #> #   hospitalized_increase <int>, negative_increase <int>,
+    #> #   positive_increase <int>, total_test_results_increase <int>, hash <chr>
     ```
 
 ### States
@@ -143,28 +89,28 @@ grouped by similar endpoints and included below.
     #> [1] 20200920
     #> 
     #> $state
-    #> [1] "TX"
+    #> [1] "FL"
     #> 
     #> $positive
-    #> [1] 688534
+    #> [1] 683754
     #> 
     #> $negative
-    #> [1] 4904954
+    #> [1] 4411335
     #> 
     #> $pending
-    #> NULL
+    #> [1] 3871
     #> 
     #> $totalTestResults
-    #> [1] 5593488
+    #> [1] 5095089
     #> 
     #> $hospitalizedCurrently
-    #> [1] 3081
+    #> [1] 2292
     #> 
     #> $hospitalizedCumulative
-    #> NULL
+    #> [1] 42939
     #> 
     #> $inIcuCurrently
-    #> [1] 1057
+    #> NULL
     #> 
     #> $inIcuCumulative
     #> NULL
@@ -176,43 +122,43 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $recovered
-    #> [1] 609210
+    #> NULL
     #> 
     #> $dataQualityGrade
     #> [1] "A"
     #> 
     #> $lastUpdateEt
-    #> [1] "9/20/2020 15:50"
+    #> [1] "9/19/2020 23:59"
     #> 
     #> $dateModified
-    #> [1] "2020-09-20T15:50:00Z"
+    #> [1] "2020-09-19T23:59:00Z"
     #> 
     #> $checkTimeEt
-    #> [1] "09/20 11:50"
+    #> [1] "09/19 19:59"
     #> 
     #> $death
-    #> [1] 14893
+    #> [1] 13459
     #> 
     #> $hospitalized
-    #> NULL
+    #> [1] 42939
     #> 
     #> $dateChecked
-    #> [1] "2020-09-20T15:50:00Z"
+    #> [1] "2020-09-19T23:59:00Z"
     #> 
     #> $totalTestsViral
-    #> [1] 5593488
+    #> [1] 7142713
     #> 
     #> $positiveTestsViral
-    #> NULL
+    #> [1] 879887
     #> 
     #> $negativeTestsViral
-    #> NULL
+    #> [1] 6222032
     #> 
     #> $positiveCasesViral
-    #> [1] 688534
+    #> [1] 683754
     #> 
     #> $deathConfirmed
-    #> NULL
+    #> [1] 13459
     #> 
     #> $deathProbable
     #> NULL
@@ -221,67 +167,67 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $totalTestsPeopleViral
-    #> NULL
+    #> [1] 5102203
     #> 
     #> $totalTestsAntibody
-    #> [1] 385351
+    #> [1] 446669
     #> 
     #> $positiveTestsAntibody
-    #> [1] 34639
+    #> [1] 34738
     #> 
     #> $negativeTestsAntibody
-    #> NULL
+    #> [1] 411877
     #> 
     #> $totalTestsPeopleAntibody
-    #> NULL
+    #> [1] 437913
     #> 
     #> $positiveTestsPeopleAntibody
-    #> NULL
+    #> [1] 34017
     #> 
     #> $negativeTestsPeopleAntibody
-    #> NULL
+    #> [1] 403867
     #> 
     #> $totalTestsPeopleAntigen
     #> NULL
     #> 
     #> $positiveTestsPeopleAntigen
-    #> NULL
+    #> [1] 14565
     #> 
     #> $totalTestsAntigen
-    #> [1] 63908
+    #> NULL
     #> 
     #> $positiveTestsAntigen
-    #> [1] 7793
+    #> NULL
     #> 
     #> $fips
-    #> [1] "48"
+    #> [1] "12"
     #> 
     #> $positiveIncrease
-    #> [1] 2466
+    #> [1] 2521
     #> 
     #> $negativeIncrease
-    #> [1] 27846
+    #> [1] 24014
     #> 
     #> $total
-    #> [1] 5593488
+    #> [1] 5098960
     #> 
     #> $totalTestResultsSource
     #> [1] "posNeg"
     #> 
     #> $totalTestResultsIncrease
-    #> [1] 30312
+    #> [1] 26535
     #> 
     #> $posNeg
-    #> [1] 5593488
+    #> [1] 5095089
     #> 
     #> $deathIncrease
-    #> [1] 45
+    #> [1] 9
     #> 
     #> $hospitalizedIncrease
-    #> [1] 0
+    #> [1] 81
     #> 
     #> $hash
-    #> [1] "dda19cfcd03fde717fc7185489907e372c264b25"
+    #> [1] "cfb904601b096e11d34b678dd9d9abdcbf80e2c4"
     #> 
     #> $commercialScore
     #> [1] 0
