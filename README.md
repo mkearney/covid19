@@ -89,73 +89,73 @@ grouped by similar endpoints and included below.
     #> [1] 20200925
     #> 
     #> $state
-    #> [1] "PA"
+    #> [1] "OK"
     #> 
     #> $positive
-    #> [1] 154203
+    #> [1] 82520
     #> 
     #> $negative
-    #> [1] 1816397
+    #> [1] 1058144
     #> 
     #> $pending
-    #> NULL
+    #> [1] 6368
     #> 
     #> $totalTestResults
-    #> [1] 1970600
+    #> [1] 1140664
     #> 
     #> $hospitalizedCurrently
-    #> [1] 435
+    #> [1] 590
     #> 
     #> $hospitalizedCumulative
-    #> NULL
+    #> [1] 6192
     #> 
     #> $inIcuCurrently
-    #> NULL
+    #> [1] 220
     #> 
     #> $inIcuCumulative
     #> NULL
     #> 
     #> $onVentilatorCurrently
-    #> [1] 58
+    #> NULL
     #> 
     #> $onVentilatorCumulative
     #> NULL
     #> 
     #> $recovered
-    #> [1] 126446
+    #> [1] 68911
     #> 
     #> $dataQualityGrade
     #> [1] "A+"
     #> 
     #> $lastUpdateEt
-    #> [1] "9/25/2020 12:00"
+    #> [1] "9/25/2020 00:00"
     #> 
     #> $dateModified
-    #> [1] "2020-09-25T12:00:00Z"
+    #> [1] "2020-09-25T00:00:00Z"
     #> 
     #> $checkTimeEt
-    #> [1] "09/25 08:00"
+    #> [1] "09/24 20:00"
     #> 
     #> $death
-    #> [1] 8081
+    #> [1] 993
     #> 
     #> $hospitalized
-    #> NULL
+    #> [1] 6192
     #> 
     #> $dateChecked
-    #> [1] "2020-09-25T12:00:00Z"
+    #> [1] "2020-09-25T00:00:00Z"
     #> 
     #> $totalTestsViral
-    #> [1] 2868166
+    #> [1] 1153358
     #> 
     #> $positiveTestsViral
-    #> NULL
+    #> [1] 92923
     #> 
     #> $negativeTestsViral
-    #> NULL
+    #> [1] 1058144
     #> 
     #> $positiveCasesViral
-    #> [1] 149410
+    #> [1] 82520
     #> 
     #> $deathConfirmed
     #> NULL
@@ -167,13 +167,13 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $totalTestsPeopleViral
-    #> [1] 1965807
+    #> NULL
     #> 
     #> $totalTestsAntibody
-    #> NULL
+    #> [1] 76497
     #> 
     #> $positiveTestsAntibody
-    #> NULL
+    #> [1] 3764
     #> 
     #> $negativeTestsAntibody
     #> NULL
@@ -200,34 +200,34 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $fips
-    #> [1] "42"
+    #> [1] "40"
     #> 
     #> $positiveIncrease
-    #> [1] 806
+    #> [1] 1276
     #> 
     #> $negativeIncrease
-    #> [1] 12927
+    #> [1] 12462
     #> 
     #> $total
-    #> [1] 1970600
+    #> [1] 1147032
     #> 
     #> $totalTestResultsSource
     #> [1] "posNeg"
     #> 
     #> $totalTestResultsIncrease
-    #> [1] 13733
+    #> [1] 13738
     #> 
     #> $posNeg
-    #> [1] 1970600
+    #> [1] 1140664
     #> 
     #> $deathIncrease
-    #> [1] 2
+    #> [1] 12
     #> 
     #> $hospitalizedIncrease
-    #> [1] 0
+    #> [1] 62
     #> 
     #> $hash
-    #> [1] "fd570e979c470b48c693b0fc8042e50c95be796a"
+    #> [1] "138bb7d1a73f2a2eaa42c9c9912b4c5c1fe34d34"
     #> 
     #> $commercialScore
     #> [1] 0
