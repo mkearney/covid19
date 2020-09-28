@@ -89,64 +89,64 @@ grouped by similar endpoints and included below.
     #> [1] 20200927
     #> 
     #> $state
-    #> [1] "NY"
+    #> [1] "IL"
     #> 
     #> $positive
-    #> [1] 455626
+    #> [1] 290419
     #> 
     #> $negative
-    #> [1] 10052560
+    #> [1] 5191580
     #> 
     #> $pending
     #> NULL
     #> 
     #> $totalTestResults
-    #> [1] 10508186
+    #> [1] 5481999
     #> 
     #> $hospitalizedCurrently
-    #> [1] 541
+    #> [1] 1486
     #> 
     #> $hospitalizedCumulative
-    #> [1] 89995
+    #> NULL
     #> 
     #> $inIcuCurrently
-    #> [1] 155
+    #> [1] 350
     #> 
     #> $inIcuCumulative
     #> NULL
     #> 
     #> $onVentilatorCurrently
-    #> [1] 59
+    #> [1] 144
     #> 
     #> $onVentilatorCumulative
     #> NULL
     #> 
     #> $recovered
-    #> [1] 76595
+    #> NULL
     #> 
     #> $dataQualityGrade
     #> [1] "A"
     #> 
     #> $lastUpdateEt
-    #> [1] "9/26/2020 23:59"
+    #> [1] "9/27/2020 00:00"
     #> 
     #> $dateModified
-    #> [1] "2020-09-26T23:59:00Z"
+    #> [1] "2020-09-27T00:00:00Z"
     #> 
     #> $checkTimeEt
-    #> [1] "09/26 19:59"
+    #> [1] "09/26 20:00"
     #> 
     #> $death
-    #> [1] 25456
+    #> [1] 8845
     #> 
     #> $hospitalized
-    #> [1] 89995
+    #> NULL
     #> 
     #> $dateChecked
-    #> [1] "2020-09-26T23:59:00Z"
+    #> [1] "2020-09-27T00:00:00Z"
     #> 
     #> $totalTestsViral
-    #> NULL
+    #> [1] 5479510
     #> 
     #> $positiveTestsViral
     #> NULL
@@ -155,16 +155,16 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $positiveCasesViral
-    #> [1] 455626
+    #> [1] 287930
     #> 
     #> $deathConfirmed
-    #> NULL
+    #> [1] 8601
     #> 
     #> $deathProbable
-    #> NULL
+    #> [1] 244
     #> 
     #> $totalTestEncountersViral
-    #> [1] 10508186
+    #> NULL
     #> 
     #> $totalTestsPeopleViral
     #> NULL
@@ -200,34 +200,34 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $fips
-    #> [1] "36"
+    #> [1] "17"
     #> 
     #> $positiveIncrease
-    #> [1] 866
+    #> [1] 1604
     #> 
     #> $negativeIncrease
-    #> [1] 83904
+    #> [1] 49218
     #> 
     #> $total
-    #> [1] 10508186
+    #> [1] 5481999
     #> 
     #> $totalTestResultsSource
     #> [1] "posNeg"
     #> 
     #> $totalTestResultsIncrease
-    #> [1] 84770
+    #> [1] 50822
     #> 
     #> $posNeg
-    #> [1] 10508186
+    #> [1] 5481999
     #> 
     #> $deathIncrease
-    #> [1] 6
+    #> [1] 13
     #> 
     #> $hospitalizedIncrease
     #> [1] 0
     #> 
     #> $hash
-    #> [1] "079e29c03c47c4700948101e29a58ce827d31a57"
+    #> [1] "10d884d7e78f8bfed5fdb05d08064841c4d88a1a"
     #> 
     #> $commercialScore
     #> [1] 0
