@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2020-09-28     56  7117251 91574039   11160            29539           405326
+    #> 1 2020-09-29     56  7154198 92281568    7695            30391           407059
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, date_checked <dttm>, death <int>, hospitalized <int>,
@@ -55,20 +55,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 251 x 25
+    #> # A tibble: 252 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-09-28     56  7117251 91574039   11160            29539           405326
-    #>  2 2020-09-27     56  7080727 90655018   11136            29434           404085
-    #>  3 2020-09-26     56  7045273 89985494   11183            29554           403325
-    #>  4 2020-09-25     56  6997437 89096343   10905            29769           402171
-    #>  5 2020-09-24     56  6941911 88239824   12008            30043           400840
-    #>  6 2020-09-23     56  6898139 87416375   10535            29905           399252
-    #>  7 2020-09-22     56  6859572 86615497    7999            29459           397801
-    #>  8 2020-09-21     56  6810133 85942856   13241            28755           396355
-    #>  9 2020-09-20     56  6770661 85303584   13192            28608           395215
-    #> 10 2020-09-19     56  6734366 84512983   13217            29035           394699
-    #> # … with 241 more rows, and 18 more variables: in_icu_currently <int>,
+    #>  1 2020-09-29     56  7154198 92281568    7695            30391           407059
+    #>  2 2020-09-28     56  7117251 91574039   11160            29539           405326
+    #>  3 2020-09-27     56  7080727 90655018   11136            29434           404085
+    #>  4 2020-09-26     56  7045273 89985494   11183            29554           403325
+    #>  5 2020-09-25     56  6997437 89096343   10905            29769           402171
+    #>  6 2020-09-24     56  6941911 88239824   12008            30043           400840
+    #>  7 2020-09-23     56  6898139 87416375   10535            29905           399252
+    #>  8 2020-09-22     56  6859572 86615497    7999            29459           397801
+    #>  9 2020-09-21     56  6810133 85942856   13241            28755           396355
+    #> 10 2020-09-20     56  6770661 85303584   13192            28608           395215
+    #> # … with 242 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, date_checked <dttm>,
     #> #   death <int>, hospitalized <int>, total_test_results <int>,
@@ -86,67 +86,67 @@ grouped by similar endpoints and included below.
     ``` r
     covid19_states()
     #> $date
-    #> [1] 20200928
+    #> [1] 20200929
     #> 
     #> $state
-    #> [1] "NY"
+    #> [1] "NJ"
     #> 
     #> $positive
-    #> [1] 456460
+    #> [1] 204563
     #> 
     #> $negative
-    #> [1] 10104662
+    #> [1] 3362197
     #> 
     #> $pending
     #> NULL
     #> 
     #> $totalTestResults
-    #> [1] 10561122
+    #> [1] 3566760
     #> 
     #> $hospitalizedCurrently
-    #> [1] 543
+    #> [1] 443
     #> 
     #> $hospitalizedCumulative
-    #> [1] 89995
+    #> [1] 23379
     #> 
     #> $inIcuCurrently
-    #> [1] 135
+    #> [1] 101
     #> 
     #> $inIcuCumulative
     #> NULL
     #> 
     #> $onVentilatorCurrently
-    #> [1] 57
+    #> [1] 34
     #> 
     #> $onVentilatorCumulative
     #> NULL
     #> 
     #> $recovered
-    #> [1] 76649
+    #> [1] 34842
     #> 
     #> $dataQualityGrade
-    #> [1] "A"
+    #> [1] "A+"
     #> 
     #> $lastUpdateEt
-    #> [1] "9/27/2020 23:59"
+    #> [1] "9/29/2020 00:00"
     #> 
     #> $dateModified
-    #> [1] "2020-09-27T23:59:00Z"
+    #> [1] "2020-09-29T00:00:00Z"
     #> 
     #> $checkTimeEt
-    #> [1] "09/27 19:59"
+    #> [1] "09/28 20:00"
     #> 
     #> $death
-    #> [1] 25468
+    #> [1] 16117
     #> 
     #> $hospitalized
-    #> [1] 89995
+    #> [1] 23379
     #> 
     #> $dateChecked
-    #> [1] "2020-09-27T23:59:00Z"
+    #> [1] "2020-09-29T00:00:00Z"
     #> 
     #> $totalTestsViral
-    #> NULL
+    #> [1] 3566304
     #> 
     #> $positiveTestsViral
     #> NULL
@@ -155,16 +155,16 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $positiveCasesViral
-    #> [1] 456460
+    #> [1] 204563
     #> 
     #> $deathConfirmed
-    #> NULL
+    #> [1] 14326
     #> 
     #> $deathProbable
-    #> NULL
+    #> [1] 1791
     #> 
     #> $totalTestEncountersViral
-    #> [1] 10561122
+    #> NULL
     #> 
     #> $totalTestsPeopleViral
     #> NULL
@@ -200,34 +200,34 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $fips
-    #> [1] "36"
+    #> [1] "34"
     #> 
     #> $positiveIncrease
-    #> [1] 834
+    #> [1] 456
     #> 
     #> $negativeIncrease
-    #> [1] 52102
+    #> [1] 0
     #> 
     #> $total
-    #> [1] 10561122
+    #> [1] 3566760
     #> 
     #> $totalTestResultsSource
     #> [1] "posNeg"
     #> 
     #> $totalTestResultsIncrease
-    #> [1] 52936
+    #> [1] 456
     #> 
     #> $posNeg
-    #> [1] 10561122
+    #> [1] 3566760
     #> 
     #> $deathIncrease
-    #> [1] 12
+    #> [1] 10
     #> 
     #> $hospitalizedIncrease
-    #> [1] 0
+    #> [1] 41
     #> 
     #> $hash
-    #> [1] "01f9649685713c44d62ef31c52aa112289ab57b8"
+    #> [1] "9cb7b4a6d9cd9f514383ad35a7654e88482dd0e4"
     #> 
     #> $commercialScore
     #> [1] 0
@@ -254,20 +254,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 11,690 x 54
+    #> # A tibble: 11,746 x 54
     #>    date       state positive negative pending total_test_resu… hospitalized_cu…
     #>    <date>     <chr>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2020-09-28 AK        8549   436242      NA           444791               43
-    #>  2 2020-09-28 AL      152983   980291      NA          1116346              753
-    #>  3 2020-09-28 AR       82049   918177      NA           997698              491
-    #>  4 2020-09-28 AS           0     1571      NA             1571               NA
-    #>  5 2020-09-28 AZ      217510  1235742      NA          1448712              468
-    #>  6 2020-09-28 CA      805263 13679589      NA         14484852             3160
-    #>  7 2020-09-28 CO       69079   824302      NA          1313403              263
-    #>  8 2020-09-28 CT       57147  1514059      NA          1571206               75
-    #>  9 2020-09-28 DC       15264   367784      NA           383048               90
-    #> 10 2020-09-28 DE       20389   263426      NA           283815               60
-    #> # … with 11,680 more rows, and 47 more variables:
+    #>  1 2020-09-29 AK        8674   442382      NA           451056               49
+    #>  2 2020-09-29 AL      153554   983163      NA          1119712              773
+    #>  3 2020-09-29 AR       82755   927902      NA          1007905              491
+    #>  4 2020-09-29 AS           0     1571      NA             1571               NA
+    #>  5 2020-09-29 AZ      218184  1239906      NA          1453528              540
+    #>  6 2020-09-29 CA      807425 13806120      NA         14613545             3223
+    #>  7 2020-09-29 CO       69490   830384      NA          1326642              246
+    #>  8 2020-09-29 CT       57329  1524263      NA          1581592               92
+    #>  9 2020-09-29 DC       15300   371096      NA           386396               93
+    #> 10 2020-09-29 DE       20531   264957      NA           285488               64
+    #> # … with 11,736 more rows, and 47 more variables:
     #> #   hospitalized_cumulative <int>, in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, recovered <int>, data_quality_grade <chr>,
