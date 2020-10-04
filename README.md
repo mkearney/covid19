@@ -89,79 +89,79 @@ grouped by similar endpoints and included below.
     #> [1] 20201003
     #> 
     #> $state
-    #> [1] "TX"
+    #> [1] "MI"
     #> 
     #> $positive
-    #> [1] 763010
+    #> [1] 141271
     #> 
     #> $negative
-    #> [1] 5709929
+    #> [1] 3623003
     #> 
     #> $pending
     #> NULL
     #> 
     #> $totalTestResults
-    #> [1] 6472939
+    #> [1] 3764274
     #> 
     #> $hospitalizedCurrently
-    #> [1] 3195
+    #> [1] 678
     #> 
     #> $hospitalizedCumulative
     #> NULL
     #> 
     #> $inIcuCurrently
-    #> [1] 1101
+    #> [1] 158
     #> 
     #> $inIcuCumulative
     #> NULL
     #> 
     #> $onVentilatorCurrently
-    #> NULL
+    #> [1] 62
     #> 
     #> $onVentilatorCumulative
     #> NULL
     #> 
     #> $recovered
-    #> [1] 677244
+    #> [1] 99521
     #> 
     #> $dataQualityGrade
-    #> [1] "A"
+    #> [1] "A+"
     #> 
     #> $lastUpdateEt
-    #> [1] "10/3/2020 17:00"
+    #> [1] "10/3/2020 00:00"
     #> 
     #> $dateModified
-    #> [1] "2020-10-03T17:00:00Z"
+    #> [1] "2020-10-03T00:00:00Z"
     #> 
     #> $checkTimeEt
-    #> [1] "10/03 13:00"
+    #> [1] "10/02 20:00"
     #> 
     #> $death
-    #> [1] 15992
+    #> [1] 7124
     #> 
     #> $hospitalized
     #> NULL
     #> 
     #> $dateChecked
-    #> [1] "2020-10-03T17:00:00Z"
+    #> [1] "2020-10-03T00:00:00Z"
     #> 
     #> $totalTestsViral
-    #> [1] 6472939
+    #> [1] 3800035
     #> 
     #> $positiveTestsViral
-    #> NULL
+    #> [1] 177032
     #> 
     #> $negativeTestsViral
-    #> NULL
+    #> [1] 3623003
     #> 
     #> $positiveCasesViral
-    #> [1] 763010
+    #> [1] 127516
     #> 
     #> $deathConfirmed
-    #> NULL
+    #> [1] 6801
     #> 
     #> $deathProbable
-    #> NULL
+    #> [1] 323
     #> 
     #> $totalTestEncountersViral
     #> NULL
@@ -170,10 +170,10 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $totalTestsAntibody
-    #> [1] 417575
+    #> [1] 297983
     #> 
     #> $positiveTestsAntibody
-    #> [1] 37871
+    #> NULL
     #> 
     #> $negativeTestsAntibody
     #> NULL
@@ -194,40 +194,40 @@ grouped by similar endpoints and included below.
     #> NULL
     #> 
     #> $totalTestsAntigen
-    #> [1] 130374
+    #> NULL
     #> 
     #> $positiveTestsAntigen
-    #> [1] 12330
+    #> NULL
     #> 
     #> $fips
-    #> [1] "48"
+    #> [1] "26"
     #> 
     #> $positiveIncrease
-    #> [1] 7006
+    #> [1] 1275
     #> 
     #> $negativeIncrease
-    #> [1] 97191
+    #> [1] 39251
     #> 
     #> $total
-    #> [1] 6472939
+    #> [1] 3764274
     #> 
     #> $totalTestResultsSource
     #> [1] "posNeg"
     #> 
     #> $totalTestResultsIncrease
-    #> [1] 104197
+    #> [1] 40526
     #> 
     #> $posNeg
-    #> [1] 6472939
+    #> [1] 3764274
     #> 
     #> $deathIncrease
-    #> [1] 97
+    #> [1] 14
     #> 
     #> $hospitalizedIncrease
     #> [1] 0
     #> 
     #> $hash
-    #> [1] "c81649647785e28ccf741a4b977d57da91dcc1f3"
+    #> [1] "4799f9606d6768244d8f3167f9d2b0f380eb3e85"
     #> 
     #> $commercialScore
     #> [1] 0
