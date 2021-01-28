@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2021-01-26     56 25078884   2.27e8    9879           108957           791165
+    #> 1 2021-01-26     56 25078884   2.27e8    9879           108960           791165
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>,
@@ -59,7 +59,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 380 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2021-01-26     56 25078884   2.27e8    9879           108957           791165
+    #>  1 2021-01-26     56 25078884   2.27e8    9879           108960           791165
     #>  2 2021-01-25     56 24935139   2.26e8   10963           109936           787460
     #>  3 2021-01-24     56 24802072   2.24e8   10892           110628           784945
     #>  4 2021-01-23     56 24658381   2.23e8   10864           113609           783036
@@ -95,7 +95,7 @@ grouped by similar endpoints and included below.
     #>  4 2021-01-26 AS           0             NA     2140      NA totalTestsViral 
     #>  5 2021-01-26 AZ      732643          44887  2691291      NA totalTestsViral 
     #>  6 2021-01-26 CA     3153186             NA 37857584      NA totalTestsViral 
-    #>  7 2021-01-26 CO      388620          18539  1982404      NA totalTestEncoun…
+    #>  7 2021-01-26 CO      388620          18840  1991411      NA totalTestEncoun…
     #>  8 2021-01-26 CT      244899          14754  5332432      NA posNeg          
     #>  9 2021-01-26 DC       35700             NA  1023982      NA totalTestEncoun…
     #> 10 2021-01-26 DE       75490           3507   498857      NA totalTestEncoun…
@@ -136,7 +136,7 @@ grouped by similar endpoints and included below.
     #>  4 2021-01-26 AS           0             NA     2140      NA totalTestsViral 
     #>  5 2021-01-26 AZ      732643          44887  2691291      NA totalTestsViral 
     #>  6 2021-01-26 CA     3153186             NA 37857584      NA totalTestsViral 
-    #>  7 2021-01-26 CO      388620          18539  1982404      NA totalTestEncoun…
+    #>  7 2021-01-26 CO      388620          18840  1991411      NA totalTestEncoun…
     #>  8 2021-01-26 CT      244899          14754  5332432      NA posNeg          
     #>  9 2021-01-26 DC       35700             NA  1023982      NA totalTestEncoun…
     #> 10 2021-01-26 DE       75490           3507   498857      NA totalTestEncoun…
