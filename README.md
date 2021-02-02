@@ -127,7 +127,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 18,866 x 55
+    #> # A tibble: 18,869 x 55
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
     #>  1 2021-02-01 AK       52668             NA       NA      NA totalTestsViral 
@@ -140,7 +140,7 @@ grouped by similar endpoints and included below.
     #>  8 2021-02-01 CT      253954          15419  5556519      NA posNeg          
     #>  9 2021-02-01 DC       37008             NA       NA      NA totalTestEncoun…
     #> 10 2021-02-01 DE       78495           3817   509320      NA totalTestEncoun…
-    #> # … with 18,856 more rows, and 48 more variables: total_test_results <int>,
+    #> # … with 18,859 more rows, and 48 more variables: total_test_results <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
