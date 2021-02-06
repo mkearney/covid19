@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2021-02-04     56 26455629   1.18e8   11914            88668           819380
+    #> 1 2021-02-05     56 26586775   1.19e8   11546            86373           822320
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>,
@@ -56,20 +56,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_us_daily()
-    #> # A tibble: 389 x 25
+    #> # A tibble: 390 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2021-02-04     56 26455629   1.18e8   11914            88668           819380
-    #>  2 2021-02-03     56 26331722   1.18e8   12077            91440           815978
-    #>  3 2021-02-02     56 26214762   1.17e8   10590            92880           812003
-    #>  4 2021-02-01     56 26097146   1.17e8   11957            93536           808718
-    #>  5 2021-01-31     56 25976946   1.16e8   12007            95013           806952
-    #>  6 2021-01-30     56 25857579   1.16e8   11986            97561           804781
-    #>  7 2021-01-29     56 25708755   1.15e8   12400           101003           801634
-    #>  8 2021-01-28     56 25541644   1.15e8   12095           104303           798799
-    #>  9 2021-01-27     56 25384338   1.14e8   11972           107444           795299
-    #> 10 2021-01-26     56 25230353   1.14e8    9879           108960           791165
-    #> # … with 379 more rows, and 18 more variables: in_icu_currently <int>,
+    #>  1 2021-02-05     56 26586775   1.19e8   11546            86373           822320
+    #>  2 2021-02-04     56 26455629   1.18e8   11914            88668           819380
+    #>  3 2021-02-03     56 26331722   1.18e8   12077            91440           815978
+    #>  4 2021-02-02     56 26214762   1.17e8   10590            92880           812003
+    #>  5 2021-02-01     56 26097146   1.17e8   11957            93536           808718
+    #>  6 2021-01-31     56 25976946   1.16e8   12007            95013           806952
+    #>  7 2021-01-30     56 25857579   1.16e8   11986            97561           804781
+    #>  8 2021-01-29     56 25708755   1.15e8   12400           101003           801634
+    #>  9 2021-01-28     56 25541644   1.15e8   12095           104303           798799
+    #> 10 2021-01-27     56 25384338   1.14e8   11972           107444           795299
+    #> # … with 380 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, date_checked <dttm>, death <int>,
     #> #   hospitalized <int>, total_test_results <int>, last_modified <dttm>,
@@ -89,16 +89,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 55
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
-    #>  1 2021-02-04 AK       53114             NA       NA      NA totalTestsViral 
-    #>  2 2021-02-04 AL      467823         100050  1781911      NA totalTestsPeopl…
-    #>  3 2021-02-04 AR      302899          61940  2255554      NA totalTestsViral 
-    #>  4 2021-02-04 AS           0             NA     2140      NA totalTestsViral 
-    #>  5 2021-02-04 AZ      771796          49544  2781628      NA totalTestsViral 
-    #>  6 2021-02-04 CA     3294447             NA       NA      NA totalTestsViral 
-    #>  7 2021-02-04 CO      400851          20227  2046519      NA totalTestEncoun…
-    #>  8 2021-02-04 CT      257941          15667  5654383      NA posNeg          
-    #>  9 2021-02-04 DC       37365             NA       NA      NA totalTestEncoun…
-    #> 10 2021-02-04 DE       79225           3949   512060      NA totalTestEncoun…
+    #>  1 2021-02-05 AK       53279             NA       NA      NA totalTestsViral 
+    #>  2 2021-02-05 AL      469319         100466  1781911      NA totalTestsPeopl…
+    #>  3 2021-02-05 AR      304723          62472  2265981      NA totalTestsViral 
+    #>  4 2021-02-05 AS           0             NA     2140      NA totalTestsViral 
+    #>  5 2021-02-05 AZ      775622          49963  2793926      NA totalTestsViral 
+    #>  6 2021-02-05 CA     3308468             NA       NA      NA totalTestsViral 
+    #>  7 2021-02-05 CO      402714          20428  2055340      NA totalTestEncoun…
+    #>  8 2021-02-05 CT      259372          15789  5700100      NA posNeg          
+    #>  9 2021-02-05 DC       37634             NA       NA      NA totalTestEncoun…
+    #> 10 2021-02-05 DE       79546           3957   513179      NA totalTestEncoun…
     #> # … with 46 more rows, and 48 more variables: total_test_results <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
@@ -127,20 +127,20 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 19,037 x 55
+    #> # A tibble: 19,093 x 55
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
-    #>  1 2021-02-04 AK       53114             NA       NA      NA totalTestsViral 
-    #>  2 2021-02-04 AL      467823         100050  1781911      NA totalTestsPeopl…
-    #>  3 2021-02-04 AR      302899          61940  2255554      NA totalTestsViral 
-    #>  4 2021-02-04 AS           0             NA     2140      NA totalTestsViral 
-    #>  5 2021-02-04 AZ      771796          49544  2781628      NA totalTestsViral 
-    #>  6 2021-02-04 CA     3294447             NA       NA      NA totalTestsViral 
-    #>  7 2021-02-04 CO      400851          20227  2046519      NA totalTestEncoun…
-    #>  8 2021-02-04 CT      257941          15667  5654383      NA posNeg          
-    #>  9 2021-02-04 DC       37365             NA       NA      NA totalTestEncoun…
-    #> 10 2021-02-04 DE       79225           3949   512060      NA totalTestEncoun…
-    #> # … with 19,027 more rows, and 48 more variables: total_test_results <int>,
+    #>  1 2021-02-05 AK       53279             NA       NA      NA totalTestsViral 
+    #>  2 2021-02-05 AL      469319         100466  1781911      NA totalTestsPeopl…
+    #>  3 2021-02-05 AR      304723          62472  2265981      NA totalTestsViral 
+    #>  4 2021-02-05 AS           0             NA     2140      NA totalTestsViral 
+    #>  5 2021-02-05 AZ      775622          49963  2793926      NA totalTestsViral 
+    #>  6 2021-02-05 CA     3308468             NA       NA      NA totalTestsViral 
+    #>  7 2021-02-05 CO      402714          20428  2055340      NA totalTestEncoun…
+    #>  8 2021-02-05 CT      259372          15789  5700100      NA posNeg          
+    #>  9 2021-02-05 DC       37634             NA       NA      NA totalTestEncoun…
+    #> 10 2021-02-05 DE       79546           3957   513179      NA totalTestEncoun…
+    #> # … with 19,083 more rows, and 48 more variables: total_test_results <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
