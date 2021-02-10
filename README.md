@@ -179,7 +179,7 @@ grouped by similar endpoints and included below.
     #>  7 CO    "The… https://pu… https://public.… https://service… https://service…
     #>  8 CT    "Neg… https://da… https://data.ct… https://data.ct… <NA>            
     #>  9 DC    "On … https://co… https://coronav… https://microst… <NA>            
-    #> 10 DE    "Thr… https://my… https://myhealt… <NA>             <NA>            
+    #> 10 DE    "On … https://my… https://myhealt… <NA>             <NA>            
     #> # … with 46 more rows, and 10 more variables: covid19site_quinary <chr>,
     #> #   twitter <chr>, covid19site_old <chr>,
     #> #   covid_tracking_project_preferred_total_test_units <chr>,
