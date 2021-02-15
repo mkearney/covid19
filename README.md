@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2021-02-14     56 27428733   1.23e8   11515            67023           842162
+    #> 1 2021-02-14     56 27429496   1.23e8   11515            67023           842162
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>,
@@ -59,8 +59,8 @@ grouped by similar endpoints and included below.
     #> # A tibble: 399 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2021-02-14     56 27428733   1.23e8   11515            67023           842162
-    #>  2 2021-02-13     56 27356889   1.23e8   11529            69283           840926
+    #>  1 2021-02-14     56 27429496   1.23e8   11515            67023           842162
+    #>  2 2021-02-13     56 27357332   1.23e8   11529            69283           840926
     #>  3 2021-02-12     56 27266690   1.22e8    9434            71497           839121
     #>  4 2021-02-11     56 27165660   1.22e8   11981            74225           836774
     #>  5 2021-02-10     56 27063243   1.21e8   12079            76979           834314
