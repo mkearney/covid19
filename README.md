@@ -103,9 +103,9 @@ grouped by similar endpoints and included below.
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
-    #> #   recovered <int>, last_update_et <chr>, date_modified <chr>,
-    #> #   check_time_et <chr>, death <int>, hospitalized <int>, date_checked <chr>,
-    #> #   total_tests_viral <int>, positive_tests_viral <int>,
+    #> #   recovered <int>, data_quality_grade <chr>, last_update_et <chr>,
+    #> #   date_modified <chr>, check_time_et <chr>, death <int>, hospitalized <int>,
+    #> #   date_checked <chr>, total_tests_viral <int>, positive_tests_viral <int>,
     #> #   negative_tests_viral <int>, positive_cases_viral <int>,
     #> #   death_confirmed <int>, death_probable <int>,
     #> #   total_test_encounters_viral <int>, total_tests_people_viral <int>,
@@ -115,10 +115,10 @@ grouped by similar endpoints and included below.
     #> #   total_tests_people_antigen <int>, positive_tests_people_antigen <int>,
     #> #   total_tests_antigen <int>, positive_tests_antigen <int>, fips <chr>,
     #> #   positive_increase <int>, negative_increase <int>, total <int>,
-    #> #   total_test_results_increase <int>, pos_neg <int>, data_quality_grade <lgl>,
-    #> #   death_increase <int>, hospitalized_increase <int>, hash <chr>,
-    #> #   commercial_score <int>, negative_regular_score <int>, negative_score <int>,
-    #> #   positive_score <int>, score <int>, grade <chr>
+    #> #   total_test_results_increase <int>, pos_neg <int>, death_increase <int>,
+    #> #   hospitalized_increase <int>, hash <chr>, commercial_score <int>,
+    #> #   negative_regular_score <int>, negative_score <int>, positive_score <int>,
+    #> #   score <int>, grade <chr>
     ```
 
   - **`covid19_states_daily()`**: Counts (`positive`, `negative`,
@@ -144,9 +144,9 @@ grouped by similar endpoints and included below.
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
-    #> #   recovered <int>, last_update_et <chr>, date_modified <chr>,
-    #> #   check_time_et <chr>, death <int>, hospitalized <int>, date_checked <chr>,
-    #> #   total_tests_viral <int>, positive_tests_viral <int>,
+    #> #   recovered <int>, data_quality_grade <chr>, last_update_et <chr>,
+    #> #   date_modified <chr>, check_time_et <chr>, death <int>, hospitalized <int>,
+    #> #   date_checked <chr>, total_tests_viral <int>, positive_tests_viral <int>,
     #> #   negative_tests_viral <int>, positive_cases_viral <int>,
     #> #   death_confirmed <int>, death_probable <int>,
     #> #   total_test_encounters_viral <int>, total_tests_people_viral <int>,
@@ -156,10 +156,10 @@ grouped by similar endpoints and included below.
     #> #   total_tests_people_antigen <int>, positive_tests_people_antigen <int>,
     #> #   total_tests_antigen <int>, positive_tests_antigen <int>, fips <chr>,
     #> #   positive_increase <int>, negative_increase <int>, total <int>,
-    #> #   total_test_results_increase <int>, pos_neg <int>, data_quality_grade <lgl>,
-    #> #   death_increase <int>, hospitalized_increase <int>, hash <chr>,
-    #> #   commercial_score <int>, negative_regular_score <int>, negative_score <int>,
-    #> #   positive_score <int>, score <int>, grade <chr>
+    #> #   total_test_results_increase <int>, pos_neg <int>, death_increase <int>,
+    #> #   hospitalized_increase <int>, hash <chr>, commercial_score <int>,
+    #> #   negative_regular_score <int>, negative_score <int>, positive_score <int>,
+    #> #   score <int>, grade <chr>
     ```
 
   - **`covid19_states_info()`**: State government links, Twitter
