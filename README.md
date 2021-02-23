@@ -86,7 +86,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states()
-    #> # A tibble: 56 x 55
+    #> # A tibble: 56 x 56
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
     #>  1 2021-02-22 AK       55507             NA       NA      NA totalTestsViral 
@@ -99,15 +99,15 @@ grouped by similar endpoints and included below.
     #>  8 2021-02-22 CT      275334          17041  6251451      NA posNeg          
     #>  9 2021-02-22 DC       39755             NA       NA      NA totalTestEncoun…
     #> 10 2021-02-22 DE       85090           4481   532452      NA totalTestEncoun…
-    #> # … with 46 more rows, and 48 more variables: total_test_results <int>,
+    #> # … with 46 more rows, and 49 more variables: total_test_results <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, last_update_et <chr>, date_modified <chr>,
-    #> #   check_time_et <chr>, death <int>, hospitalized <int>, date_checked <chr>,
-    #> #   total_tests_viral <int>, positive_tests_viral <int>,
-    #> #   negative_tests_viral <int>, positive_cases_viral <int>,
-    #> #   death_confirmed <int>, death_probable <int>,
+    #> #   check_time_et <chr>, death <int>, hospitalized <int>,
+    #> #   hospitalized_discharged <int>, date_checked <chr>, total_tests_viral <int>,
+    #> #   positive_tests_viral <int>, negative_tests_viral <int>,
+    #> #   positive_cases_viral <int>, death_confirmed <int>, death_probable <int>,
     #> #   total_test_encounters_viral <int>, total_tests_people_viral <int>,
     #> #   total_tests_antibody <int>, positive_tests_antibody <int>,
     #> #   negative_tests_antibody <int>, total_tests_people_antibody <int>,
@@ -127,7 +127,7 @@ grouped by similar endpoints and included below.
     
     ``` r
     covid19_states_daily()
-    #> # A tibble: 20,045 x 55
+    #> # A tibble: 20,045 x 56
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
     #>  1 2021-02-22 AK       55507             NA       NA      NA totalTestsViral 
@@ -140,15 +140,15 @@ grouped by similar endpoints and included below.
     #>  8 2021-02-22 CT      275334          17041  6251451      NA posNeg          
     #>  9 2021-02-22 DC       39755             NA       NA      NA totalTestEncoun…
     #> 10 2021-02-22 DE       85090           4481   532452      NA totalTestEncoun…
-    #> # … with 20,035 more rows, and 48 more variables: total_test_results <int>,
+    #> # … with 20,035 more rows, and 49 more variables: total_test_results <int>,
     #> #   hospitalized_currently <int>, hospitalized_cumulative <int>,
     #> #   in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   recovered <int>, last_update_et <chr>, date_modified <chr>,
-    #> #   check_time_et <chr>, death <int>, hospitalized <int>, date_checked <chr>,
-    #> #   total_tests_viral <int>, positive_tests_viral <int>,
-    #> #   negative_tests_viral <int>, positive_cases_viral <int>,
-    #> #   death_confirmed <int>, death_probable <int>,
+    #> #   check_time_et <chr>, death <int>, hospitalized <int>,
+    #> #   hospitalized_discharged <int>, date_checked <chr>, total_tests_viral <int>,
+    #> #   positive_tests_viral <int>, negative_tests_viral <int>,
+    #> #   positive_cases_viral <int>, death_confirmed <int>, death_probable <int>,
     #> #   total_test_encounters_viral <int>, total_tests_people_viral <int>,
     #> #   total_tests_antibody <int>, positive_tests_antibody <int>,
     #> #   negative_tests_antibody <int>, total_tests_people_antibody <int>,
