@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2021-02-26     56 28225167   1.22e8   11945            51116           865690
+    #> 1 2021-02-26     56 28225595   1.22e8   11945            51112           865699
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>,
@@ -59,7 +59,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 411 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2021-02-26     56 28225167   1.22e8   11945            51116           865690
+    #>  1 2021-02-26     56 28225595   1.22e8   11945            51112           865699
     #>  2 2021-02-25     56 28150738   1.21e8   11813            52669           863766
     #>  3 2021-02-24     56 28075173   1.21e8   12548            54118           861784
     #>  4 2021-02-23     56 28001915   1.20e8   11200            55058           859612
@@ -89,7 +89,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 56 x 56
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
-    #>  1 2021-02-26 AK       55886             NA       NA      NA totalTestsViral 
+    #>  1 2021-02-26 AK       55989             NA       NA      NA totalTestsViral 
     #>  2 2021-02-26 AL      491849         106620  1896419      NA totalTestsPeopl…
     #>  3 2021-02-26 AR      318638          66927  2382628      NA totalTestsViral 
     #>  4 2021-02-26 AS           0             NA     2140      NA totalTestsViral 
@@ -130,7 +130,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 20,276 x 56
     #>    date       state positive probable_cases negative pending total_test_resu…
     #>    <date>     <chr>    <int>          <int>    <int>   <int> <chr>           
-    #>  1 2021-02-26 AK       55886             NA       NA      NA totalTestsViral 
+    #>  1 2021-02-26 AK       55989             NA       NA      NA totalTestsViral 
     #>  2 2021-02-26 AL      491849         106620  1896419      NA totalTestsPeopl…
     #>  3 2021-02-26 AR      318638          66927  2382628      NA totalTestsViral 
     #>  4 2021-02-26 AS           0             NA     2140      NA totalTestsViral 
