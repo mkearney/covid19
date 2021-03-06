@@ -40,7 +40,7 @@ grouped by similar endpoints and included below.
     #> # A tibble: 1 x 25
     #>   date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>   <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #> 1 2021-03-05     56 28654639 77880093   12213            42541           877384
+    #> 1 2021-03-05     56 28654639 74307155   12213            42541           877384
     #> # … with 18 more variables: in_icu_currently <int>, in_icu_cumulative <int>,
     #> #   on_ventilator_currently <int>, on_ventilator_cumulative <int>,
     #> #   date_checked <dttm>, death <int>, hospitalized <int>,
@@ -59,16 +59,16 @@ grouped by similar endpoints and included below.
     #> # A tibble: 418 x 25
     #>    date       states positive negative pending hospitalized_cu… hospitalized_cu…
     #>    <date>      <int>    <int>    <int>   <int>            <int>            <int>
-    #>  1 2021-03-05     56 28654639 77880093   12213            42541           877384
-    #>  2 2021-03-04     56 28585852 77583925   12405            44172           874603
-    #>  3 2021-03-03     56 28520365 77378071   11778            45462           873073
-    #>  4 2021-03-02     56 28453529 77101070   11196            46388           870901
-    #>  5 2021-03-01     56 28399281 76833195   11748            46738           869030
-    #>  6 2021-02-28     56 28351189 76707311   11708            47352           868006
-    #>  7 2021-02-27     56 28296840 76488397   11731            48871           867127
-    #>  8 2021-02-26     56 28225595 76267172   11945            51112           865699
-    #>  9 2021-02-25     56 28150738 75967099   11813            52669           863766
-    #> 10 2021-02-24     56 28075173 75678069   12548            54118           861784
+    #>  1 2021-03-05     56 28654639 74307155   12213            42541           877384
+    #>  2 2021-03-04     56 28585852 74035238   12405            44172           874603
+    #>  3 2021-03-03     56 28520365 73857281   11778            45462           873073
+    #>  4 2021-03-02     56 28453529 73590280   11196            46388           870901
+    #>  5 2021-03-01     56 28399281 73334501   11748            46738           869030
+    #>  6 2021-02-28     56 28351189 73216424   11708            47352           868006
+    #>  7 2021-02-27     56 28296840 73012825   11731            48871           867127
+    #>  8 2021-02-26     56 28225595 72807735   11945            51112           865699
+    #>  9 2021-02-25     56 28150738 72530906   11813            52669           863766
+    #> 10 2021-02-24     56 28075173 72258697   12548            54118           861784
     #> # … with 408 more rows, and 18 more variables: in_icu_currently <int>,
     #> #   in_icu_cumulative <int>, on_ventilator_currently <int>,
     #> #   on_ventilator_cumulative <int>, date_checked <dttm>, death <int>,
